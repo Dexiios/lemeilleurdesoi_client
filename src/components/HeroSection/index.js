@@ -3,7 +3,6 @@ import { Button } from '../ButtonElements'
 import {
   HeroContainer,
   HeroBg,
-  ImageBg,
   VideoBg,
   HeroContent,
   HeroH1,
