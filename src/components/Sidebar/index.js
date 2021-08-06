@@ -18,11 +18,11 @@ function Sidebar ({isOpen, toggle}) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='Accueil' onClick={toggle}>Accueil</SidebarLink>
-          <SidebarLink to='Seances'>Séances</SidebarLink>
-          <SidebarLink to='A propos'>A propos</SidebarLink>
-          <SidebarLink to='Facebook'>Facebook</SidebarLink>
-          <SidebarLink to='Instagram'>Instagram</SidebarLink>
+          <SidebarLink to="accueil" onClick={toggle}>Accueil</SidebarLink>
+          <SidebarLink to="Seances">Séances</SidebarLink>
+          <SidebarLink to="A propos">A propos</SidebarLink>
+          <SidebarLink to="Facebook">Facebook</SidebarLink>
+          <SidebarLink to="Instagram">Instagram</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to='/contact'>Contact</SidebarRoute>
