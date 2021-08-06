@@ -19,7 +19,7 @@ function Sidebar ({isOpen, toggle}) {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="accueil" onClick={toggle}>Accueil</SidebarLink>
-          <SidebarLink to="Seances">Séances</SidebarLink>
+          <SidebarLink to='services'>Séances</SidebarLink>
           <SidebarLink to="A propos">A propos</SidebarLink>
           <SidebarLink to="Facebook">Facebook</SidebarLink>
           <SidebarLink to="Instagram">Instagram</SidebarLink>
