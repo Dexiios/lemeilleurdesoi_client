@@ -15,8 +15,14 @@ import {
   SocialMediaWrap,
   WebsiteRights
 } from "./FooterElements";
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -36,9 +42,9 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">Le Meilleur de Soi</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>Le Meilleur de Soi</SocialLogo>
             <WebsiteRights>
-              Le Meilleur de Soi © {new Date().getFullYear()} Tous droits
+              Le Meilleur de Soi © {new Date().getFullYear()} - Tous droits
               réservés
             </WebsiteRights>
             <SocialIcons>
