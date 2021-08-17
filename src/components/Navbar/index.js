@@ -36,16 +36,17 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>
+          <NavLogo to="/" scrollNav={scrollNav} onClick={toggleHome}>
             Le Meilleur de Soi
           </NavLogo>
-          <MobileIcon onClick={toggle}>
+          <MobileIcon scrollNav={scrollNav} onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks
                 to="accueil"
+                scrollNav={scrollNav}
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -58,6 +59,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 to="services"
+                scrollNav={scrollNav}
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -68,19 +70,29 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="A propos">A propos</NavLinks>
+              <NavLinks to="A propos" scrollNav={scrollNav}>A propos</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks href="https://www.facebook.com/merveilledesprit">
+              <NavLinks href="https://www.facebook.com/merveilledesprit" scrollNav={scrollNav}>
                 Facebook
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="">Instagram</NavLinks>
+              <NavLinks to="" scrollNav={scrollNav}>Instagram</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/contact">Contact</NavBtnLink>
+          <NavLinks
+                to="/contact"
+                scrollNav={scrollNav}
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Contact
+              </NavLinks>
           </NavBtn>
         </NavbarContainer>
       </Nav>

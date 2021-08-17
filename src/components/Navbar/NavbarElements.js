@@ -3,7 +3,9 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
+  box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "0 0 7px rgba(0,0,0,.1)" : "0 0 0px"};
   -webkit-transition: background-color 500ms linear;
   -moz-transition: background-color 500ms linear;
   -o-transition: background-color 500ms linear;
@@ -35,14 +37,18 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
+  color: ${({ scrollNav }) => (scrollNav ? "#333" : "#fff")};
+  -webkit-transition: color 500ms linear;
+  -moz-transition: color 500ms linear;
+  -o-transition: color 500ms linear;
+  -ms-transition: color 500ms linear;
+  transition: color 500ms linear;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
-  font-weight: bold;
   text-decoration: none;
 `;
 
@@ -57,7 +63,12 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: ${({ scrollNav }) => (scrollNav ? "#333" : "#fff")};
+    -webkit-transition: color 500ms linear;
+    -moz-transition: color 500ms linear;
+    -o-transition: color 500ms linear;
+    -ms-transition: color 500ms linear;
+    transition: color 500ms linear;
   }
 `;
 
@@ -78,7 +89,12 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: ${({ scrollNav }) => (scrollNav ? "#000" : "#fff")};
+  -webkit-transition: color 500ms linear;
+  -moz-transition: color 500ms linear;
+  -o-transition: color 500ms linear;
+  -ms-transition: color 500ms linear;
+  transition: color 500ms linear;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -102,10 +118,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #01bf71;
+  background: #A8DBA9;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: #000000;
   font-size: 16px;
   outline: none;
   border: none;

@@ -1,47 +1,52 @@
-import React, { useState } from 'react'
-import { Button } from '../ButtonElements'
+import React, { useState } from "react";
+import { Button } from "../ButtonElements";
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
+  ImageBg,
   HeroContent,
   HeroH1,
   HeroBtnWrapper,
   HeroP,
   ArrowForward,
-  ArrowRight
-} from './HeroElements'
-import heroVideo from '../../videos/Reflection Of Tree At Night.mp4'
+  ArrowRight,
+} from "./HeroElements";
+import HeroImage from "../../images/man_standing_mountains.jpg";
 
 const Hero = () => {
-  const [hover, setHover] = useState(false)
+  const [hover, setHover] = useState(false);
 
   const onHover = () => {
-    setHover(!hover)
-  }
+    setHover(!hover);
+  };
 
   return (
-    <HeroContainer id='accueil'>
+    <HeroContainer id="accueil">
       <HeroBg>
-        <VideoBg autoPlay loop muted src={heroVideo} type='video/mp4' />
+        <ImageBg src={HeroImage} />
       </HeroBg>
       <HeroContent>
         <HeroH1>Bienvenue,</HeroH1>
         <HeroP>Le Meilleur de Soi, relaxation et bien être</HeroP>
         <HeroBtnWrapper>
           <Button
-            to='services'
+            to="services"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary='true'
-            dark='true'
+            primary="true"
+            dark="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
-            Voir les séances {hover ? <ArrowForward /> : <ArrowRight />}
+            En savoir plus {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

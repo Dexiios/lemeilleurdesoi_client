@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import HeroImage from "../../images/heroImage.jpg";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
@@ -8,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 1080px;
   position: relative;
   z-index: 1;
 
@@ -22,9 +21,9 @@ export const HeroContainer = styled.div`
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
+        rgba(0, 0, 0, 0) 100%
       ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+      linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
       z-index: 2;
   }
 `;
@@ -40,8 +39,8 @@ export const HeroBg = styled.div`
   overflow: hidden;
 `;
 
-export const ImageBg = styled.div`
-  background-image: url(${HeroImage});
+export const ImageBg = styled.img`
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -59,6 +58,7 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
+  top: 300px;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
@@ -67,27 +67,27 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
+  font-size: 55px;
   text-align: center;
 
   @media screen and (max-width: 870px) {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 42px;
   }
 `;
 
 export const HeroP = styled.p`
   margin-top: 24px;
   color: #fff;
-  front-size: 24px;
+  font-size: 34px;
   text-align: center;
   max-width: 600px;
 
   @media screen and (max-width: 870px) {
-    font-size: 34px;
+    font-size: 24px;
   }
 
   @media screen and (max-width: 480px) {
