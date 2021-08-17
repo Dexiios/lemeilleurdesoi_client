@@ -17,7 +17,7 @@ const Navbar = ({ toggle }) => {
   const [scrollNav, setScollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 250) {
+    if (window.scrollY >= 200) {
       setScollNav(true);
     } else {
       setScollNav(false);
