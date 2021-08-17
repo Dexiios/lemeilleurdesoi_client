@@ -30,7 +30,7 @@ const Hero = () => {
         <HeroP>Le Meilleur de Soi, relaxation et bien être</HeroP>
         <HeroBtnWrapper>
           <Button
-            to="services"
+            to="ensavoirplus"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"

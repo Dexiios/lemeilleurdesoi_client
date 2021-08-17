@@ -89,7 +89,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: ${({ scrollNav }) => (scrollNav ? "#000" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#333" : "#fff")};
   -webkit-transition: color 500ms linear;
   -moz-transition: color 500ms linear;
   -o-transition: color 500ms linear;
