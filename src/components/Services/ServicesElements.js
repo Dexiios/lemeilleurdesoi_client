@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-  height: 600px;
   margin-bottom: 300px;
   display: flex;
   flex-direction: column;
@@ -9,30 +8,26 @@ export const ServicesContainer = styled.div`
   background: #fff;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1300px;
   }
 `;
 
 export const ServicesWrapper = styled.div`
-  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  grid-gap: 16px;
+  grid-gap: 20px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1300px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (max-width: 768px) {
-    grid-template-colimns: 1fr;
-    padding: 0 20px;
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
   }
 `;
 
