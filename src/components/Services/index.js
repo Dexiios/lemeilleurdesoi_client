@@ -43,6 +43,7 @@ const Services = () => {
             style={{
               backgroundColor: "#fff",
               padding: "0px",
+              borderRadius: "15px",
             }}
           >
             <ImageBgService src={serviceFirstImage} />
@@ -52,7 +53,9 @@ const Services = () => {
               </ServiceFrontContentText>
             </ServiceFrontContent>
           </FrontSide>
-          <BackSide style={{ backgroundColor: "#175852" }}>ROCKS</BackSide>
+          <BackSide style={{ backgroundColor: "#fff", borderRadius: "15px" }}>
+            La consultation individuelle
+          </BackSide>
         </Flippy>
         <Flippy
           flipOnHover={true} // default false
@@ -73,6 +76,7 @@ const Services = () => {
             style={{
               backgroundColor: "#fff",
               padding: "0px",
+              borderRadius: "15px",
             }}
           >
             <ImageBgService src={serviceSecondImage} />
@@ -82,7 +86,9 @@ const Services = () => {
               </ServiceFrontContentText>
             </ServiceFrontContent>
           </FrontSide>
-          <BackSide style={{ backgroundColor: "#175852" }}>ROCKS</BackSide>
+          <BackSide style={{ backgroundColor: "#fff", borderRadius: "15px" }}>
+            La séance de groupe
+          </BackSide>
         </Flippy>
         <Flippy
           flipOnHover={true} // default false
@@ -103,16 +109,17 @@ const Services = () => {
             style={{
               backgroundColor: "#fff",
               padding: "0px",
+              borderRadius: "15px",
             }}
           >
             <ImageBgService src={serviceThirdImage} />
             <ServiceFrontContent>
-              <ServiceFrontContentText>
-                Le amma assis
-              </ServiceFrontContentText>
+              <ServiceFrontContentText>Le amma assis</ServiceFrontContentText>
             </ServiceFrontContent>
           </FrontSide>
-          <BackSide style={{ backgroundColor: "#175852" }}>ROCKS</BackSide>
+          <BackSide style={{ backgroundColor: "#fff", borderRadius: "15px" }}>
+            Le amma assis
+          </BackSide>
         </Flippy>
       </ServicesWrapper>
     </ServicesContainer>

@@ -68,7 +68,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   line-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: ${({ lightText }) => (lightText ? "#f7f8f2" : "#222")};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -80,7 +80,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: ${({ darkText }) => (darkText ? "#333" : "#fff")};
 `;
 
 export const BtnWrap = styled.div`
@@ -91,6 +91,7 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+  border-radius: 15px;
 `;
 
 export const Img = styled.img`
@@ -98,4 +99,5 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
   filter: drop-shadow(6px 3px 6px #666);
+  border-radius: 15px;
 `;

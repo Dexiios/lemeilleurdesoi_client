@@ -85,6 +85,7 @@ export const ImageBgService = styled.img`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  border-radius: 15px;
 `;
 
 export const ServiceFrontContent = styled.div`
