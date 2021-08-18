@@ -20,14 +20,16 @@ export const ServicesWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  grid-gap: 20px;
+  grid-gap: 60px;
 
   @media screen and (max-width: 1300px) {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
   }
 
   @media screen and (max-width: 900px) {
     grid-template-columns: 1fr;
+    grid-gap: 80px;
   }
 `;
 
@@ -75,4 +77,27 @@ export const ServicesH2 = styled.h2`
 export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
+`;
+
+export const ImageBgService = styled.img`
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+`;
+
+export const ServiceFrontContent = styled.div`
+  z-index: 3;
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  display: flex;
+`;
+
+export const ServiceFrontContentText = styled.p`
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+  width: 100%;
 `;

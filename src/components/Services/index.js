@@ -7,10 +7,16 @@ import {
   ServicesP,
   ServicesCard,
   ServicesIcon,
+  ImageBgService,
+  ServiceFrontContent,
+  ServiceFrontContentText,
 } from "./ServicesElements";
 import Icon1 from "../../images/meditation_sea.jpg";
 import Icon2 from "../../images/undraw_meditation.png";
 import Icon3 from "../../images/undraw_meditation.png";
+import serviceFirstImage from "../../images/girl_meditating_desert.jpg";
+import serviceSecondImage from "../../images/group_meditation.jpg";
+import serviceThirdImage from "../../images/amma.jpg";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 
 const Services = () => {
@@ -22,14 +28,29 @@ const Services = () => {
           flipOnHover={true} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
-          style={{ width: "400px", height: "600px", filter: "drop-shadow(6px 3px 6px #666)", display: "flex", flexDirection: "column", justifyContent: "flex", alignItems: "center", maxHeight: "600px"  }}
+          style={{
+            width: "400px",
+            height: "600px",
+            filter: "drop-shadow(6px 3px 6px #666)",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex",
+            alignItems: "center",
+            maxHeight: "600px",
+          }}
         >
           <FrontSide
             style={{
-              backgroundColor: "#41669d",
+              backgroundColor: "#fff",
+              padding: "0px",
             }}
           >
-            La consultation individuelle
+            <ImageBgService src={serviceFirstImage} />
+            <ServiceFrontContent>
+              <ServiceFrontContentText>
+                La consultation individuelle
+              </ServiceFrontContentText>
+            </ServiceFrontContent>
           </FrontSide>
           <BackSide style={{ backgroundColor: "#175852" }}>ROCKS</BackSide>
         </Flippy>
@@ -37,14 +58,29 @@ const Services = () => {
           flipOnHover={true} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
-          style={{ width: "400px", height: "600px", filter: "drop-shadow(6px 3px 6px #666)", display: "flex", flexDirection: "column", justifyContent: "flex", alignItems: "center", maxHeight: "600px"  }}
+          style={{
+            width: "400px",
+            height: "600px",
+            filter: "drop-shadow(6px 3px 6px #666)",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex",
+            alignItems: "center",
+            maxHeight: "600px",
+          }}
         >
           <FrontSide
             style={{
-              backgroundColor: "#41669d",
+              backgroundColor: "#fff",
+              padding: "0px",
             }}
           >
-            Les séances de groupe
+            <ImageBgService src={serviceSecondImage} />
+            <ServiceFrontContent>
+              <ServiceFrontContentText>
+                La séance de groupe
+              </ServiceFrontContentText>
+            </ServiceFrontContent>
           </FrontSide>
           <BackSide style={{ backgroundColor: "#175852" }}>ROCKS</BackSide>
         </Flippy>
@@ -52,14 +88,29 @@ const Services = () => {
           flipOnHover={true} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
-          style={{ width: "400px", height: "600px", filter: "drop-shadow(6px 3px 6px #666)", display: "flex", flexDirection: "column", justifyContent: "flex", alignItems: "center", maxHeight: "600px"  }}
+          style={{
+            width: "400px",
+            height: "600px",
+            filter: "drop-shadow(6px 3px 6px #666)",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex",
+            alignItems: "center",
+            maxHeight: "600px",
+          }}
         >
           <FrontSide
             style={{
-              backgroundColor: "#41669d",
+              backgroundColor: "#fff",
+              padding: "0px",
             }}
           >
-            Le Amma assis
+            <ImageBgService src={serviceThirdImage} />
+            <ServiceFrontContent>
+              <ServiceFrontContentText>
+                Le amma assis
+              </ServiceFrontContentText>
+            </ServiceFrontContent>
           </FrontSide>
           <BackSide style={{ backgroundColor: "#175852" }}>ROCKS</BackSide>
         </Flippy>
