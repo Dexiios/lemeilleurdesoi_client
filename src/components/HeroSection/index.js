@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "../ButtonElements";
+import { Button, ButtonHero } from "../ButtonElements";
 import {
   HeroContainer,
   HeroBg,

@@ -48,10 +48,10 @@ const Footer = () => {
               réservés
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="//www.facebook.com" target="_blank" aria-label="Facebook">
+              <SocialIconLink href="https://www.facebook.com/merveilledesprit" target="_blank" aria-label="Facebook">
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href="//www.instagram.com" target="_blank" aria-label="Instagram">
+              <SocialIconLink href="https://www.instagram.com/le_meilleur_de_soi_bienetre/" target="_blank" aria-label="Instagram">
                 <FaInstagram />
               </SocialIconLink>
             </SocialIcons>

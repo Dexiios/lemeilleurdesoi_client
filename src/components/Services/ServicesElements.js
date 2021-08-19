@@ -62,6 +62,7 @@ export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
   color: #333;
   margin-bottom: 64px;
+  margin-top: 64px;
   text-align: center;
 
   @media screen and (max-width: 480px) {
@@ -88,10 +89,30 @@ export const ImageBgService = styled.img`
   border-radius: 15px;
 `;
 
+export const ImageBgServiceBlur = styled.img`
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  -webkit-filter: blur(5px);
+  transform: scale(1.02); 
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 15px;
+`;
+
 export const ServiceFrontContent = styled.div`
   z-index: 3;
   position: absolute;
   top: 250px;
+  width: 100%;
+  display: flex;
+`;
+
+export const ServiceBackContent = styled.div`
+  z-index: 3;
+  position: absolute;
+  top: 50px;
   width: 100%;
   display: flex;
 `;
@@ -101,4 +122,19 @@ export const ServiceFrontContentText = styled.p`
   font-size: 34px;
   text-align: center;
   width: 100%;
+`;
+
+export const ServiceBackContentText = styled.p`
+  color: #fff;
+  font-size: 18px;
+  text-align: justify;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+`;
+
+export const BtnWrapService = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
 `;

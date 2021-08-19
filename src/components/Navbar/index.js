@@ -82,7 +82,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-          <NavLinks
+          <NavBtnLink
                 to="/contact"
                 scrollNav={scrollNav}
                 smooth={true}
@@ -92,7 +92,7 @@ const Navbar = ({ toggle }) => {
                 offset={-80}
               >
                 Contact
-              </NavLinks>
+              </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

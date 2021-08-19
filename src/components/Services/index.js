@@ -1,4 +1,6 @@
 import React from "react";
+import { Button, ButtonLink } from "../ButtonElements";
+import { BtnWrapService } from "./ServicesElements";
 import {
   ServicesContainer,
   ServicesH1,
@@ -8,8 +10,11 @@ import {
   ServicesCard,
   ServicesIcon,
   ImageBgService,
+  ImageBgServiceBlur,
   ServiceFrontContent,
   ServiceFrontContentText,
+  ServiceBackContent,
+  ServiceBackContentText,
 } from "./ServicesElements";
 import Icon1 from "../../images/meditation_sea.jpg";
 import Icon2 from "../../images/undraw_meditation.png";
@@ -53,8 +58,30 @@ const Services = () => {
               </ServiceFrontContentText>
             </ServiceFrontContent>
           </FrontSide>
-          <BackSide style={{ backgroundColor: "#fff", borderRadius: "15px" }}>
-            La consultation individuelle
+          <BackSide
+            style={{
+              backgroundColor: "#fff",
+              borderRadius: "15px",
+              padding: "0px",
+            }}
+          >
+            <ImageBgServiceBlur src={serviceFirstImage} />
+            <ServiceBackContent>
+              <ServiceBackContentText>
+                Cette consultation se fait pour des problèmes profonds tels que
+                les troubles du sommeil, phobie, angoisse, stress,
+                hyperactivité, préparation aux examens. La première dure environ
+                1h30 et selon les résultats elle sera suivie de plusieurs
+                séances de 1h une à deux fois par mois. Tout est dans la
+                patience et l’assiduité pour atteindre l’objectif fixé. Le temps
+                est notre allié. En fonction du problème à gérer, je propose des
+                séances de sophrologie, de relaxation ou de méditation pleine
+                conscience guidée.
+              </ServiceBackContentText>
+            </ServiceBackContent>
+            <ServiceFrontContent style={{ top: "400px" }}>
+              <ServiceFrontContentText>Tarif : 20€/h</ServiceFrontContentText>
+            </ServiceFrontContent>
           </BackSide>
         </Flippy>
         <Flippy
@@ -86,8 +113,27 @@ const Services = () => {
               </ServiceFrontContentText>
             </ServiceFrontContent>
           </FrontSide>
-          <BackSide style={{ backgroundColor: "#fff", borderRadius: "15px" }}>
-            La séance de groupe
+          <BackSide
+            style={{
+              backgroundColor: "#fff",
+              borderRadius: "15px",
+              padding: "0px",
+            }}
+          >
+            <ImageBgServiceBlur src={serviceSecondImage} />
+            <ServiceBackContent>
+              <ServiceBackContentText>
+                Une à deux fois par mois, je propose des séances chez vous avec
+                des amis ou à mon cabinet (maximum 5 personnes) d’une durée de
+                1h30 environ. Ce sont des moments de relaxation avec
+                apprentissage de technique de respiration, méditation,
+                relaxation. Rencontre de personnes, moment de détente et de
+                partage, conseils pour un bien-être physique et psychologique.
+              </ServiceBackContentText>
+            </ServiceBackContent>
+            <ServiceFrontContent style={{ top: "400px" }}>
+              <ServiceFrontContentText>Tarif : 20€/h</ServiceFrontContentText>
+            </ServiceFrontContent>
           </BackSide>
         </Flippy>
         <Flippy
@@ -117,11 +163,38 @@ const Services = () => {
               <ServiceFrontContentText>Le amma assis</ServiceFrontContentText>
             </ServiceFrontContent>
           </FrontSide>
-          <BackSide style={{ backgroundColor: "#fff", borderRadius: "15px" }}>
-            Le amma assis
+          <BackSide
+            style={{
+              backgroundColor: "#fff",
+              borderRadius: "15px",
+              padding: "0px",
+            }}
+          >
+            <ImageBgServiceBlur src={serviceThirdImage} />
+            <ServiceBackContent>
+              <ServiceBackContentText>
+                C’est un massage de 30 à 20 minutes pouvant se faire partout.
+              </ServiceBackContentText>
+            </ServiceBackContent>
+            <ServiceFrontContent style={{ top: "400px" }}>
+              <ServiceFrontContentText>Tarif : 20€/h</ServiceFrontContentText>
+            </ServiceFrontContent>
           </BackSide>
         </Flippy>
       </ServicesWrapper>
+      <BtnWrapService>
+        <ButtonLink
+          to="/contact"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-80}
+          style={{textDecoration: "none"}}
+        >
+          Prendre rendez-vous
+        </ButtonLink>
+      </BtnWrapService>
     </ServicesContainer>
   );
 };
