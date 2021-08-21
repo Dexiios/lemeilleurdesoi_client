@@ -90,8 +90,8 @@ export const ImageBgService = styled.img`
 
 export const ImageBgServiceBlur = styled.img`
   background-repeat: no-repeat;
-  filter: blur(8px);
-  -webkit-filter: blur(5px);
+  z-index: 2;
+  -webkit-filter: blur(2px);
   transform: scale(1.02); 
   width: 100%;
   height: 100%;
@@ -121,6 +121,7 @@ export const ServiceFrontContentText = styled.p`
   font-size: 34px;
   text-align: center;
   width: 100%;
+  text-shadow: #000 1px 0 10px;
 `;
 
 export const ServiceBackContentText = styled.p`

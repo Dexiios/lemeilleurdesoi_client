@@ -29,12 +29,12 @@ const Hero = () => {
         <HeroH1>Bienvenue,</HeroH1>
         <HeroP>Le Meilleur de Soi, relaxation et bien-être</HeroP>
         <HeroBtnWrapper>
-          <Button
+          <ButtonHero
             to="ensavoirplus"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
-            dark="true"
+            dark="false"
             smooth={true}
             duration={500}
             spy={true}
@@ -42,7 +42,7 @@ const Hero = () => {
             offset={-80}
           >
             En savoir plus {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </ButtonHero>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

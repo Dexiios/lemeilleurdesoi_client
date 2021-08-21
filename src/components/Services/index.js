@@ -20,9 +20,11 @@ import Icon1 from "../../images/meditation_sea.jpg";
 import Icon2 from "../../images/undraw_meditation.png";
 import Icon3 from "../../images/undraw_meditation.png";
 import serviceFirstImage from "../../images/girl_meditating_desert.jpg";
-import serviceSecondImage from "../../images/group_meditation.jpg";
+import serviceFirstImageBack from "../../images/sky.jpg";
+import serviceSecondImage from "../../images/group.jpg";
 import serviceThirdImage from "../../images/amma.jpg";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
+import { Brightness1 } from "@material-ui/icons";
 
 const Services = () => {
   return (
@@ -65,7 +67,7 @@ const Services = () => {
               padding: "0px",
             }}
           >
-            <ImageBgServiceBlur src={serviceFirstImage} />
+            <ImageBgServiceBlur style={{ filter: "blur(2px) brightness(60%)" }} src={serviceFirstImage} />
             <ServiceBackContent>
               <ServiceBackContentText>
                 Cette consultation se fait pour des problèmes profonds tels que
@@ -120,7 +122,10 @@ const Services = () => {
               padding: "0px",
             }}
           >
-            <ImageBgServiceBlur src={serviceSecondImage} />
+            <ImageBgServiceBlur
+              style={{ filter: "blur(2px) brightness(60%)" }}
+              src={serviceSecondImage}
+            />
             <ServiceBackContent>
               <ServiceBackContentText>
                 Une à deux fois par mois, je propose des séances chez vous avec
@@ -170,7 +175,10 @@ const Services = () => {
               padding: "0px",
             }}
           >
-            <ImageBgServiceBlur src={serviceThirdImage} />
+            <ImageBgServiceBlur
+              style={{ filter: "blur(2px) brightness(60%)" }}
+              src={serviceThirdImage}
+            />
             <ServiceBackContent>
               <ServiceBackContentText>
                 C’est un massage de 30 à 20 minutes pouvant se faire partout.
@@ -190,7 +198,7 @@ const Services = () => {
           spy={true}
           exact="true"
           offset={-80}
-          style={{textDecoration: "none"}}
+          style={{ textDecoration: "none" }}
         >
           Prendre rendez-vous
         </ButtonLink>

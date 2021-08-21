@@ -103,12 +103,12 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #dbc2ad;
   }
 
   &:hover {
     transition: all 0.1s ease-in-ouy;
-    color: ${({ scrollNav }) => (scrollNav ? "#888" : "#222")};
+    color: ${({ scrollNav }) => (scrollNav ? "#dbc2ad" : "#222")};
   }
 `;
 
@@ -141,6 +141,6 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.1s ease-in-ouy;
-    color: ${({ scrollNav }) => (scrollNav ? "#888" : "#222")};
+    color: ${({ scrollNav }) => (scrollNav ? "#dbc2ad" : "#222")};
   }
 `;
