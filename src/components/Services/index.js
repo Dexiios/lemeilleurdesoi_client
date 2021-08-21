@@ -6,9 +6,6 @@ import {
   ServicesH1,
   ServicesWrapper,
   ServicesH2,
-  ServicesP,
-  ServicesCard,
-  ServicesIcon,
   ImageBgService,
   ImageBgServiceBlur,
   ServiceFrontContent,
@@ -16,11 +13,7 @@ import {
   ServiceBackContent,
   ServiceBackContentText,
 } from "./ServicesElements";
-import Icon1 from "../../images/meditation_sea.jpg";
-import Icon2 from "../../images/undraw_meditation.png";
-import Icon3 from "../../images/undraw_meditation.png";
 import serviceFirstImage from "../../images/girl_meditating_desert.jpg";
-import serviceFirstImageBack from "../../images/sky.jpg";
 import serviceSecondImage from "../../images/group.jpg";
 import serviceThirdImage from "../../images/amma.jpg";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
@@ -29,6 +22,7 @@ const Services = () => {
   return (
     <ServicesContainer id="services">
       <ServicesH1>Les Séances</ServicesH1>
+      <ServicesH2>Touchez les cartes pour afficher la descritpion de la séance.</ServicesH2>
       <ServicesWrapper>
         <Flippy
           flipOnHover={true} // default false
