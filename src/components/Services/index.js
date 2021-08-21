@@ -24,7 +24,6 @@ import serviceFirstImageBack from "../../images/sky.jpg";
 import serviceSecondImage from "../../images/group.jpg";
 import serviceThirdImage from "../../images/amma.jpg";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
-import { Brightness1 } from "@material-ui/icons";
 
 const Services = () => {
   return (

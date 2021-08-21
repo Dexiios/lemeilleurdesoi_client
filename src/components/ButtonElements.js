@@ -47,7 +47,7 @@ export const ButtonLink = styled(LinkR)`
 
 export const ButtonHero = styled(Link)`
   border-radius: 50px;
-  background: rgb(20,20,20,0.7);
+  background: rgb(0,54,64,0.7);
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
   color: #fff;
@@ -63,7 +63,7 @@ export const ButtonHero = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: rgb(20,20,20,0.9);
+    background: rgb(0,54,64,0.9);
   }
 `;
 
