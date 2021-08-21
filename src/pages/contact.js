@@ -5,9 +5,7 @@ import HeroContactSection from "../components/HeroContact";
 import Footer from "../components/Footer";
 import InfoSection from "../components/InfoSection/Index";
 import {
-  homeObjOne,
-  homeObjThree,
-  homeObjTwo
+  contactObjOne
 } from "../components/InfoSection/Data";
 
 const ContactPage = () => {
@@ -22,7 +20,7 @@ const ContactPage = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroContactSection />
-      <InfoSection {...homeObjOne} />
+      <InfoSection {...contactObjOne} />
       <Footer />
     </>
   );
