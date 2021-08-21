@@ -13,12 +13,11 @@ import {
   SocialLogo,
   SocialMedia,
   SocialMediaWrap,
-  WebsiteRights
+  WebsiteRights,
 } from "./FooterElements";
 import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
-
   const toggleHome = () => {
     scroll.scrollToTop();
   };
@@ -29,29 +28,51 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About us</FooterLinkTitle>
+              <FooterLinkTitle>A propos</FooterLinkTitle>
               <FooterLink to="/contact">Contact</FooterLink>
-              <FooterLink to="/terms">Terms of Service</FooterLink>
+              <FooterLink to="/terms">Conditions d'utilisation</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Réseaux Sociaux</FooterLinkTitle>
-              <FooterLink to="/contact">Contact</FooterLink>
-              <FooterLink to="/terms">Terms of Service</FooterLink>
+              <FooterLink
+                to="//www.facebook.com/merveilledesprit"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                Facebook
+              </FooterLink>
+              <FooterLink
+                to="//www.instagram.com/le_meilleur_de_soi_bienetre/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                Instagram
+              </FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/" onClick={toggleHome}>Le Meilleur de Soi</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>
+              Le Meilleur de Soi
+            </SocialLogo>
             <WebsiteRights>
               Le Meilleur de Soi © {new Date().getFullYear()} - Tous droits
               réservés
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="https://www.facebook.com/merveilledesprit" target="_blank" aria-label="Facebook">
+              <SocialIconLink
+                href="https://www.facebook.com/merveilledesprit"
+                target="_blank"
+                aria-label="Facebook"
+              >
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href="https://www.instagram.com/le_meilleur_de_soi_bienetre/" target="_blank" aria-label="Instagram">
+              <SocialIconLink
+                href="https://www.instagram.com/le_meilleur_de_soi_bienetre/"
+                target="_blank"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </SocialIconLink>
             </SocialIcons>

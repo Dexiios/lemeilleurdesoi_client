@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link as LinkR } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
   background-color: #F9FAFB;
@@ -55,7 +55,7 @@ export const FooterLinkTitle = styled.h1`
   margin-bottom: 16px;
 `;
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled(LinkR)`
   color: #555;
   text-decoration: none;
   margin-bottom: 0.5rem;
@@ -84,7 +84,7 @@ export const SocialMediaWrap = styled.div`
   }
 `;
 
-export const SocialLogo = styled(Link)`
+export const SocialLogo = styled(LinkR)`
   color: #555;
   justify-self: start;
   cursor: pointer;

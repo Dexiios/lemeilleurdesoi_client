@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +61,7 @@ export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
   color: #333;
   margin-bottom: 64px;
-  margin-top: 64px;
+  margin-top: 50px;
   text-align: center;
 
   @media screen and (max-width: 480px) {
@@ -136,6 +135,6 @@ export const ServiceBackContentText = styled.p`
 export const BtnWrapService = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 85px;
+  margin-bottom: 80px;
 `;

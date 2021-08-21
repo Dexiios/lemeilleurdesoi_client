@@ -39,7 +39,7 @@ const Services = () => {
             filter: "drop-shadow(6px 3px 6px #666)",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "flex",
+            justifyContent: "center",
             alignItems: "center",
             maxHeight: "600px",
           }}
