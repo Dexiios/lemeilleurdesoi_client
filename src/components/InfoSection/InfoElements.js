@@ -2,10 +2,15 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#fff" : "#010606")};
+  background: ${({ lightBg }) => (lightBg ? "#fff" : "#999")};
 
   @media screen and (max-width: 768px) {
-    padding-bottom: 500px;
+    padding-bottom: 350px;
+    padding-top: 50px;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding-bottom: 420px;
     padding-top: 50px;
   }
 `;
@@ -13,7 +18,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 1000px;
+  height: 910px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -37,7 +42,7 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 0 50px;
   grid-area: col1;
 `;
 
@@ -80,6 +85,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
+  text-align: justify;
   color: ${({ darkText }) => (darkText ? "#333" : "#fff")};
 `;
 
@@ -95,6 +101,14 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+  filter: drop-shadow(6px 3px 6px #666);
+  border-radius: 15px;
+`;
+
+export const ImgPortrait = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;

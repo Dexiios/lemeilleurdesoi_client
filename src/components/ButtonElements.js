@@ -31,6 +31,7 @@ export const ButtonLink = styled(LinkR)`
   color: ${({ dark }) => (dark ? "#010606" : "#fff")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
+  text-decoration: none;
   border: none;
   cursor: pointer;
   display: flex;

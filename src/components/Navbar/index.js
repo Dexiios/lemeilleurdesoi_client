@@ -70,20 +70,8 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="A propos" scrollNav={scrollNav}>A propos</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks href="https://www.facebook.com/merveilledesprit" scrollNav={scrollNav}>
-                Facebook
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="" scrollNav={scrollNav}>Instagram</NavLinks>
-            </NavItem>
-          </NavMenu>
-          <NavBtn>
-          <NavBtnLink
-                to="/contact"
+              <NavLinks
+                to="A propos"
                 scrollNav={scrollNav}
                 smooth={true}
                 duration={500}
@@ -91,8 +79,42 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Contact
+                A propos
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavBtnLink
+                to="//www.facebook.com/merveilledesprit"
+                target="_blank"
+                aria-label="Facebook"
+                scrollNav={scrollNav}
+              >
+                Facebook
               </NavBtnLink>
+            </NavItem>
+            <NavItem>
+              <NavBtnLink
+                to="//www.instagram.com/le_meilleur_de_soi_bienetre/"
+                target="_blank"
+                aria-label="Instagram"
+                scrollNav={scrollNav}
+              >
+                Instagram
+              </NavBtnLink>
+            </NavItem>
+          </NavMenu>
+          <NavBtn>
+            <NavBtnLink
+              to="/contact"
+              scrollNav={scrollNav}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              Contact
+            </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

@@ -27,7 +27,7 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Bienvenue,</HeroH1>
-        <HeroP>Le Meilleur de Soi, relaxation et bien être</HeroP>
+        <HeroP>Le Meilleur de Soi, relaxation et bien-être</HeroP>
         <HeroBtnWrapper>
           <Button
             to="ensavoirplus"

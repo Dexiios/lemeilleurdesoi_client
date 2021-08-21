@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElements";
+import { Button, ButtonLink } from "../ButtonElements";
 import {
   Column2,
   Img,
@@ -13,6 +13,7 @@ import {
   Heading,
   Subtitle,
   BtnWrap,
+  buttonRoute,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -31,6 +32,8 @@ const InfoSection = ({
   primary,
   dark,
   dark2,
+  destination,
+  buttonRoute,
 }) => {
   return (
     <>
@@ -44,19 +47,35 @@ const InfoSection = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <Subtitle darkText={darkText}>{description2}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to="services"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
+                  {buttonRoute ? (
+                    <ButtonLink
+                      to={destination}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >
+                      {buttonLabel}
+                    </ButtonLink>
+                  ) : (
+                    <Button
+                      to={destination}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >
+                      {buttonLabel}
+                    </Button>
+                  )}
                 </BtnWrap>
               </TextWrapper>
             </Column1>

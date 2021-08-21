@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-  margin-bottom: 300px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #fff;
+  background: #F9FAFB;
 
   @media screen and (max-width: 768px) {
   }
@@ -136,5 +136,6 @@ export const ServiceBackContentText = styled.p`
 export const BtnWrapService = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 `;

@@ -7,7 +7,8 @@ import {
   SidebarMenu,
   SidebarLink,
   SideBtnWrap,
-  SidebarRoute
+  SidebarRoute,
+  SidebarRouteLink,
 } from './SidebarElements'
 
 function Sidebar ({isOpen, toggle}) {
@@ -19,10 +20,10 @@ function Sidebar ({isOpen, toggle}) {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="accueil" onClick={toggle}>Accueil</SidebarLink>
-          <SidebarLink to='services'>Séances</SidebarLink>
-          <SidebarLink to="A propos">A propos</SidebarLink>
-          <SidebarLink to="Facebook">Facebook</SidebarLink>
-          <SidebarLink to="Instagram">Instagram</SidebarLink>
+          <SidebarLink to='services' onClick={toggle}>Séances</SidebarLink>
+          <SidebarLink to="A propos" onClick={toggle}>A propos</SidebarLink>
+          <SidebarRouteLink to="//www.facebook.com/merveilledesprit" target="_blank" aria-label="Facebook">Facebook</SidebarRouteLink>
+          <SidebarRouteLink to="//www.instagram.com/le_meilleur_de_soi_bienetre/" target="_blank" aria-label="Instagram">Instagram</SidebarRouteLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to='/contact'>Contact</SidebarRoute>
