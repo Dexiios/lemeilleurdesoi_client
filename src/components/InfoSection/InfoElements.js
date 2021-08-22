@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#999")};
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     margin: 50px 0 50px
@@ -54,6 +55,7 @@ export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
   margin: 0 50px;
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     margin: 0;

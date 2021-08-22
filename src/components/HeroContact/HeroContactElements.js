@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 540px;
+  height: 70vh;
   position: relative;
   z-index: 1;
 
@@ -59,10 +59,8 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
   position: absolute;
-  top: 200px;
-  padding: 8px 24px;
+  top: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,10 +89,12 @@ export const HeroP = styled.p`
 
   @media screen and (max-width: 870px) {
     font-size: 24px;
+    margin: 24px 15px 0 15px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 24px;
+    margin: 24px 15px 0 15px;
   }
 `;
 

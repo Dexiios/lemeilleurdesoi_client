@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ButtonLink } from "../ButtonElements";
 import { BtnWrapService } from "./ServicesElements";
 import {
@@ -18,8 +18,13 @@ import serviceSecondImage from "../../images/group.jpg";
 import serviceThirdImage from "../../images/amma.jpg";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 import "./Services.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true });
+  }, []);
   return (
     <ServicesContainer id="services">
       <ServicesH1>Les Séances</ServicesH1>
@@ -28,6 +33,8 @@ const Services = () => {
       </ServicesH2>
       <ServicesWrapper>
         <Flippy
+          data-aos="fade"
+          data-aos-delay="200"
           className="flippy_custom"
           flipOnHover={true} // default false
           flipOnClick={false} // default false
@@ -77,6 +84,8 @@ const Services = () => {
           </BackSide>
         </Flippy>
         <Flippy
+          data-aos="fade"
+          data-aos-delay="500"
           flipOnHover={true} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
@@ -123,6 +132,8 @@ const Services = () => {
           </BackSide>
         </Flippy>
         <Flippy
+          data-aos="fade"
+          data-aos-delay="1000"
           flipOnHover={true} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
