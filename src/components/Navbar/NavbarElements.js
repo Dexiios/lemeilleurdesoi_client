@@ -112,7 +112,7 @@ export const NavLinks = styled(LinkS)`
 
   &:hover {
     transition: all 0.1s ease-in-ouy;
-    color: ${({ scrollNav }) => (scrollNav ? "#dbc2ad" : "#222")};
+    color: ${({ scrollNav }) => (scrollNav ? "#dbc2ad" : "#eee")};
   }
 `;
 
@@ -145,6 +145,6 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.1s ease-in-ouy;
-    color: ${({ scrollNav }) => (scrollNav ? "#dbc2ad" : "#222")};
+    color: ${({ scrollNav }) => (scrollNav ? "#dbc2ad" : "#ddd")};
   }
 `;

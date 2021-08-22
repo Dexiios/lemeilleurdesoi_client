@@ -96,6 +96,10 @@ export const HeroP = styled.p`
     font-size: 24px;
     margin: 24px 15px 0 15px;
   }
+
+  @media screen and (max-width: 280px) {
+    font-size: 18px;
+  }
 `;
 
 export const HeroBtnWrapper = styled.div`

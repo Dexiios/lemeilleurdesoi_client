@@ -5,12 +5,6 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   background: #f9fafb;
-
-  @media screen and (max-width: 768px) {
-  }
-
-  @media screen and (max-width: 480px) {
-  }
 `;
 
 export const ServicesWrapper = styled.div`

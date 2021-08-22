@@ -4,6 +4,7 @@ import Sidebar from "../components/Sidebar";
 import HeroContactSection from "../components/HeroContact";
 import Footer from "../components/Footer";
 import InfoSection from "../components/InfoSection/Index";
+import ContactSection from "../components/ContactSection";
 import {
   contactObjOne
 } from "../components/InfoSection/Data";
@@ -20,6 +21,7 @@ const ContactPage = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroContactSection />
+      <ContactSection />
       <InfoSection {...contactObjOne} />
       <Footer />
     </>
