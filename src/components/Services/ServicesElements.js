@@ -4,7 +4,7 @@ export const ServicesContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #F9FAFB;
+  background: #f9fafb;
 
   @media screen and (max-width: 768px) {
   }
@@ -58,7 +58,8 @@ export const ServicesIcon = styled.img`
 `;
 
 export const ServicesH1 = styled.h1`
-  font-size: 2.5rem;
+  font-size: 48px;
+  font-weight: 700;
   color: #333;
   margin-bottom: 34px;
   margin-top: 50px;
@@ -71,15 +72,17 @@ export const ServicesH1 = styled.h1`
 `;
 
 export const ServicesH2 = styled.h2`
-font-size: 1rem;
-color: #333;
-margin-bottom: 50px;
-text-align: center;
-
-@media screen and (max-width: 480px) {
   font-size: 1rem;
-  margin-bottom: 34px;
-}
+  color: #333;
+  margin-bottom: 50px;
+  text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+    margin-bottom: 34px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 
 export const ServicesP = styled.p`
@@ -100,7 +103,7 @@ export const ImageBgServiceBlur = styled.img`
   background-repeat: no-repeat;
   z-index: 2;
   -webkit-filter: blur(2px);
-  transform: scale(1.02); 
+  transform: scale(1.02);
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -114,6 +117,10 @@ export const ServiceFrontContent = styled.div`
   top: 250px;
   width: 100%;
   display: flex;
+
+  @media screen and (max-width: 480px) {
+    top: 200px;
+  }
 `;
 
 export const ServiceBackContent = styled.div`
@@ -130,6 +137,10 @@ export const ServiceFrontContentText = styled.p`
   text-align: center;
   width: 100%;
   text-shadow: #000 1px 0 10px;
+
+  @media screen and (max-width: 280px) {
+    font-size: 28px;
+  }
 `;
 
 export const ServiceBackContentText = styled.p`
@@ -139,6 +150,10 @@ export const ServiceBackContentText = styled.p`
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media screen and (max-width: 413px) {
+    font-size: 15px;
+  }
 `;
 
 export const BtnWrapService = styled.div`
@@ -146,4 +161,18 @@ export const BtnWrapService = styled.div`
   justify-content: center;
   margin-top: 85px;
   margin-bottom: 80px;
+`;
+
+export const FlippyContainer = styled.div`
+  width: 400px;
+  height: 600px;
+  filter: drop-shadow(6px 3px 6px #666);
+  max-height: 600px;
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+    filter: drop-shadow(6px 3px 6px #666);
+    max-height: 600px;
+    margin-left: 10%;
+  }
 `;

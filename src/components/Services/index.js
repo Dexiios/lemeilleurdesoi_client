@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, ButtonLink } from "../ButtonElements";
+import { ButtonLink } from "../ButtonElements";
 import { BtnWrapService } from "./ServicesElements";
 import {
   ServicesContainer,
@@ -17,27 +17,21 @@ import serviceFirstImage from "../../images/girl_meditating_desert.jpg";
 import serviceSecondImage from "../../images/group.jpg";
 import serviceThirdImage from "../../images/amma.jpg";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
+import "./Services.css";
 
 const Services = () => {
   return (
     <ServicesContainer id="services">
       <ServicesH1>Les Séances</ServicesH1>
-      <ServicesH2>Touchez les cartes pour afficher la descritpion de la séance.</ServicesH2>
+      <ServicesH2>
+        Touchez les cartes pour afficher la descritpion de la séance.
+      </ServicesH2>
       <ServicesWrapper>
         <Flippy
+          className="flippy_custom"
           flipOnHover={true} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
-          style={{
-            width: "400px",
-            height: "600px",
-            filter: "drop-shadow(6px 3px 6px #666)",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            maxHeight: "600px",
-          }}
         >
           <FrontSide
             style={{
@@ -60,7 +54,10 @@ const Services = () => {
               padding: "0px",
             }}
           >
-            <ImageBgServiceBlur style={{ filter: "blur(2px) brightness(60%)" }} src={serviceFirstImage} />
+            <ImageBgServiceBlur
+              style={{ filter: "blur(2px) brightness(60%)" }}
+              src={serviceFirstImage}
+            />
             <ServiceBackContent>
               <ServiceBackContentText>
                 Cette consultation se fait pour des problèmes profonds tels que
@@ -83,16 +80,7 @@ const Services = () => {
           flipOnHover={true} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
-          style={{
-            width: "400px",
-            height: "600px",
-            filter: "drop-shadow(6px 3px 6px #666)",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex",
-            alignItems: "center",
-            maxHeight: "600px",
-          }}
+          className="flippy_custom"
         >
           <FrontSide
             style={{
@@ -138,16 +126,7 @@ const Services = () => {
           flipOnHover={true} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
-          style={{
-            width: "400px",
-            height: "600px",
-            filter: "drop-shadow(6px 3px 6px #666)",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex",
-            alignItems: "center",
-            maxHeight: "600px",
-          }}
+          className="flippy_custom"
         >
           <FrontSide
             style={{

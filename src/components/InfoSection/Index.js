@@ -13,7 +13,6 @@ import {
   Heading,
   Subtitle,
   BtnWrap,
-  buttonRoute,
 } from "./InfoElements";
 
 const InfoSection = ({
