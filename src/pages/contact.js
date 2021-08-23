@@ -5,9 +5,7 @@ import HeroContactSection from "../components/HeroContact";
 import Footer from "../components/Footer";
 import InfoSection from "../components/InfoSection/Index";
 import ContactSection from "../components/ContactSection";
-import {
-  contactObjOne
-} from "../components/InfoSection/Data";
+import { contactObjOne } from "../components/InfoSection/Data";
 
 const ContactPage = () => {
   const [isOpen, setIsOpen] = useState(false);

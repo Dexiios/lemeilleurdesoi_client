@@ -123,6 +123,14 @@ export const Img = styled.img`
   }
 `;
 
+export const Map = styled.iframe`
+  title: map;
+  width: 600;
+  height: 450;
+  border: 0;
+  loading: lazy;
+`
+
 export const ImgPortrait = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
