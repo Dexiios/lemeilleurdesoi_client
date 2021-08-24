@@ -133,14 +133,13 @@ export const ImgPortrait = styled.img`
 `;
 
 export const PhotoCredit = styled.p`
-  margin-top: 5px;
-  margin-right: 5px;
+  top: 95%;
+  left: 5%;
   color: #999;
-  font-size: 14px;
-  text-align: end;
+  font-size: 10px;
+  position: absolute;
 
   @media screen and (max-width: 480px) {
     font-size: 10px;
-    margin-top: 0;
   }
 `;

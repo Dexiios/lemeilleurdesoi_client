@@ -157,30 +157,16 @@ export const BtnWrapService = styled.div`
   margin-bottom: 80px;
 `;
 
-export const FlippyContainer = styled.div`
-  width: 400px;
-  height: 600px;
-  filter: drop-shadow(6px 3px 6px #666);
-  max-height: 600px;
-
-  @media screen and (max-width: 480px) {
-    width: 300px;
-    filter: drop-shadow(6px 3px 6px #666);
-    max-height: 600px;
-    margin-left: 10%;
-  }
-`;
-
 export const PhotoCreditService = styled.p`
-  margin-top: 10px;
+  top: 96%;
+  left: 5%;
   margin-right: 5px;
   color: #777;
-  font-size: 14px;
+  font-size: 10px;
   text-align: end;
+  position: absolute;
 
   @media screen and (max-width: 480px) {
     font-size: 10px;
-    margin-top: 10px;
-    margin-right: 5px;
   }
 `;

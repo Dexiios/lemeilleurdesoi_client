@@ -30,7 +30,7 @@ const Services = () => {
     <ServicesContainer id="services">
       <ServicesH1>Les Séances</ServicesH1>
       <ServicesH2>
-        Touchez les cartes pour afficher la descritpion de la séance.
+        Je propose pour l'instant 3 types séances, d'autres seront disponibles à l'avenir.
       </ServicesH2>
       <ServicesWrapper>
         <Flippy
