@@ -13,9 +13,9 @@ function App() {
     <Router>
       <ScrollToTop>
         <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/contact" component={ContactPage} exact />
-          <Route path="/terms" component={TermsPage} exact />
+          <Route name="home" path="/" component={Home} exact />
+          <Route name="contact" path="/contact" component={ContactPage} exact />
+          <Route name="terms" path="/terms" component={TermsPage} exact />
         </Switch>
       </ScrollToTop>
     </Router>

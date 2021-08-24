@@ -67,7 +67,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavBtnLink
-                  to=""
+                  to="/#services"
                   scrollNav={scrollNav}
                   smooth={true}
                   duration={500}
@@ -80,7 +80,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavBtnLink
-                  to=""
+                  to="/#A propos"
                   scrollNav={scrollNav}
                   smooth={true}
                   duration={500}
@@ -174,7 +174,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavBtnLink
-                  to=""
+                  to="/#services"
                   scrollNav={scrollNav}
                   smooth={true}
                   duration={500}
@@ -188,7 +188,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavBtnLink
-                  to=""
+                  to="/#A propos"
                   scrollNav={scrollNav}
                   smooth={true}
                   duration={500}

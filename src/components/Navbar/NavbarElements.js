@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { HashLink as LinkH } from "react-router-hash-link";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
@@ -125,7 +126,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled(LinkH)`
   color: ${({ scrollNav }) => (scrollNav ? "#333" : "#fff")};
   -webkit-transition: color 500ms linear;
   -moz-transition: color 500ms linear;

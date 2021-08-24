@@ -48,8 +48,6 @@ const InfoSection = ({
           <InfoWrapper
             style={{
               maxWidth: "1150px",
-              marginTop: "100px",
-              marginBottom: "100px",
             }}
           >
             <InfoRow imgStart={imgStart}>
