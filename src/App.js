@@ -5,6 +5,8 @@ import Home from "./pages";
 import ContactPage from "./pages/contact";
 import ScrollToTop from "./pages/ScrollToTop";
 
+console.log(process.env.REACT_APP_GOOGLE_API_KEY)
+
 function App() {
   return (
     <Router>

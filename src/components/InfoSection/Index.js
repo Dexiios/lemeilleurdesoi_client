@@ -13,7 +13,6 @@ import {
   Heading,
   Subtitle,
   BtnWrap,
-  Map,
 } from "./InfoElements";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -94,7 +93,7 @@ const InfoSection = ({
                     }}
                     loading="lazy"
                     allowfullscreen
-                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJnzBL10SkrhIR_vEo7zWs1go&key=AIzaSyC2xxrcYyNwikrZge8uYtNEuEBOsF5WfA0"
+                    src={"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJnzBL10SkrhIR_vEo7zWs1go&key=" + process.env.REACT_APP_GOOGLE_API_KEY}
                   ></iframe>
                 </ImgWrap>
               </Column2>
