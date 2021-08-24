@@ -13,6 +13,7 @@ import {
   Heading,
   Subtitle,
   BtnWrap,
+  PhotoCredit,
 } from "./InfoElements";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -35,6 +36,7 @@ const InfoSection = ({
   dark2,
   destination,
   buttonRoute,
+  photoAuthor,
 }) => {
   useEffect(() => {
     Aos.init({ duration: 3000, once: true });
@@ -150,6 +152,7 @@ const InfoSection = ({
               <Column2>
                 <ImgWrap data-aos="fade-up">
                   <Img src={img} alt={alt} />
+                <PhotoCredit>{photoAuthor}</PhotoCredit>
                 </ImgWrap>
               </Column2>
             </InfoRow>

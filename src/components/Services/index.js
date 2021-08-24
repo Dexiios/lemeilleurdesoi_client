@@ -12,6 +12,7 @@ import {
   ServiceFrontContentText,
   ServiceBackContent,
   ServiceBackContentText,
+  PhotoCreditService,
 } from "./ServicesElements";
 import serviceFirstImage from "../../images/girl_meditating_desert.jpg";
 import serviceSecondImage from "../../images/group.jpg";
@@ -82,6 +83,9 @@ const Services = () => {
               <ServiceFrontContentText>Tarif : 20€/h</ServiceFrontContentText>
             </ServiceFrontContent>
           </BackSide>
+          <PhotoCreditService>
+            Photo par Sage Friedman sur Unsplash
+          </PhotoCreditService>
         </Flippy>
         <Flippy
           data-aos="fade"
@@ -130,6 +134,9 @@ const Services = () => {
               <ServiceFrontContentText>Tarif : 20€/h</ServiceFrontContentText>
             </ServiceFrontContent>
           </BackSide>
+          <PhotoCreditService>
+            Photo par Papaioannou Kostas sur Unsplash
+          </PhotoCreditService>
         </Flippy>
         <Flippy
           data-aos="fade"
@@ -171,6 +178,9 @@ const Services = () => {
               <ServiceFrontContentText>Tarif : 20€/h</ServiceFrontContentText>
             </ServiceFrontContent>
           </BackSide>
+          <PhotoCreditService>
+            Photo par Toa Heftiba sur Unsplash
+          </PhotoCreditService>
         </Flippy>
       </ServicesWrapper>
       <BtnWrapService>

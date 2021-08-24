@@ -12,7 +12,7 @@ import {
 } from "./SidebarElements";
 
 function Sidebar({ isOpen, toggle }) {
-  if (window.location.pathname === "/contact") {
+  if (window.location.pathname === "/contact" || (window.location.pathname === "/terms")) {
     return (
       <SidebarContainer isOpen={isOpen} onClick={toggle}>
         <Icon onClick={toggle}>

@@ -17,6 +17,7 @@ export const homeObjOne = {
   dark: false,
   primary: false,
   darkText: true,
+  photoAuthor: "Photo par Motoki Tonn sur Unsplash",
 };
 
 export const homeObjTwo = {
@@ -38,6 +39,7 @@ export const homeObjTwo = {
   dark: false,
   primary: false,
   darkText: true,
+  photoAuthor: "Photo par Elia Pellegrini sur Unsplash",
 };
 
 export const homeObjThree = {
@@ -59,6 +61,7 @@ export const homeObjThree = {
   dark: false,
   primary: false,
   darkText: true,
+  photoAuthor: "",
 };
 
 export const contactObjOne = {

@@ -14,13 +14,13 @@ const Terms = () => {
       </TermsText>
       <TermsText>
         <b>Propriétaire du site</b> :{" "}
-        <b>Theze Sophie - Le Meilleur de Soi : bien-être et relaxation</b> -
+        <b>Sophie Theze - Le Meilleur de Soi : bien-être et relaxation</b> -
         Contact : lemeilleurdesoi-rdv.gmail.com, TEL: 0608088872 - Adresse : 33
         chemin de Lespinasse 31140 Aucamville, France.
       </TermsText>
       <TermsText>
         <b>Identification de l'entreprise</b> : SARL à remplir{" "}
-        <b>Theze Sophie - Le Meilleur de Soi : bien-être et relaxation</b> au
+        <b>Sophie Theze - Le Meilleur de Soi : bien-être et relaxation</b> au
         capital social de 0€ - SIREN : - RCS ou RM : - Adresse postale : 33
         chemin de Lespinasse 31140 Aucamville, France.
       </TermsText>
@@ -34,6 +34,12 @@ const Terms = () => {
         le site Unsplash.
       </TermsText>
       <TermsH1>Activité</TermsH1>
+      <TermsText>
+        <b>Autorité ayant délivré l'autorisation à Sophie Theze d'exercer en tant que practicien en sophro-relaxation</b> : Ecole
+        Shen-Ti Caldas Formation, 11 rue du Pic du Mégal 31240, L'Union, France.
+        Organisme de formation n°73310656731. Site internet à l'adresse
+        www.shen-ti.com.
+      </TermsText>
       <TermsText>
         Le présent code de déontologie est le socle commun des sophrologues
         adhérents de la Chambre Syndicale de la Sophrologie. Il définit leurs
@@ -127,26 +133,26 @@ const Terms = () => {
       </TermsText>
       <TermsH1>Limitations de responsabilité</TermsH1>
       <TermsText>
-        <b>Theze Sophie - Le Meilleur de Soi : bien-être et relaxation</b> ne
+        <b>Sophie Theze - Le Meilleur de Soi : bien-être et relaxation</b> ne
         pourra être tenu pour responsable des dommages directs et indirects
         causés au matériel de l’utilisateur, lors de l’accès au site{" "}
         <b>www.lemeilleurdesoi-bienetre.fr</b>.
       </TermsText>
       <TermsText>
-        <b>Theze Sophie - Le Meilleur de Soi : bien-être et relaxation</b>{" "}
+        <b>Sophie Theze - Le Meilleur de Soi : bien-être et relaxation</b>{" "}
         décline toute responsabilité quant à l’utilisation qui pourrait être
         faite des informations et contenus présents sur{" "}
         <b>www.lemeilleurdesoi-bienetre.fr</b>.
       </TermsText>
       <TermsText>
-        <b>Theze Sophie - Le Meilleur de Soi : bien-être et relaxation</b>{" "}
+        <b>Sophie Theze - Le Meilleur de Soi : bien-être et relaxation</b>{" "}
         s’engage à sécuriser au mieux le site
         <b>www.lemeilleurdesoi-bienetre.fr</b>, cependant sa responsabilité ne
         pourra être mise en cause si des données indésirables sont importées et
         installées sur son site à son insu.
       </TermsText>
       <TermsText>
-        <b>Theze Sophie - Le Meilleur de Soi : bien-être et relaxation</b> se
+        <b>Sophie Theze - Le Meilleur de Soi : bien-être et relaxation</b> se
         réserve également la possibilité de mettre en cause la responsabilité
         civile et/ou pénale de l’utilisateur, notamment en cas de message à
         caractère raciste, injurieux, diffamant, ou pornographique, quel que

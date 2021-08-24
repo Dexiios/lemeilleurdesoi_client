@@ -170,3 +170,17 @@ export const FlippyContainer = styled.div`
     margin-left: 10%;
   }
 `;
+
+export const PhotoCreditService = styled.p`
+  margin-top: 10px;
+  margin-right: 5px;
+  color: #777;
+  font-size: 14px;
+  text-align: end;
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+`;

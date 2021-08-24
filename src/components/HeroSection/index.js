@@ -10,6 +10,7 @@ import {
   HeroP,
   ArrowForward,
   ArrowRight,
+  PhotoCreditHero
 } from "./HeroElements";
 import HeroImage from "../../images/man_standing_mountains.jpg";
 
@@ -45,6 +46,7 @@ const Hero = () => {
           </ButtonHero>
         </HeroBtnWrapper>
       </HeroContent>
+      <PhotoCreditHero>Photo par S Migaj sur Unsplash</PhotoCreditHero>
     </HeroContainer>
   );
 };

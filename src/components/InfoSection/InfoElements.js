@@ -6,11 +6,11 @@ export const InfoContainer = styled.div`
   overflow: hidden;
 
   @media screen and (max-width: 768px) {
-    margin: 50px 0 50px
+    margin: 50px 0 50px;
   }
 
   @media screen and (max-width: 376px) {
-    margin: 50px 0 50px
+    margin: 50px 0 50px;
   }
 `;
 
@@ -27,6 +27,7 @@ export const InfoWrapper = styled.div`
 
 export const InfoRow = styled.div`
   display: grid;
+  margin: 150px 0 150px 0;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
@@ -35,6 +36,7 @@ export const InfoRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    margin: 20px 0 20px 0;
   }
 `;
 
@@ -109,7 +111,6 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: 100%;
-  margin: 150px 0 150px 0;
   padding-right: 0;
   filter: drop-shadow(6px 3px 6px #666);
   border-radius: 15px;
@@ -129,4 +130,17 @@ export const ImgPortrait = styled.img`
   padding-right: 0;
   filter: drop-shadow(6px 3px 6px #666);
   border-radius: 15px;
+`;
+
+export const PhotoCredit = styled.p`
+  margin-top: 5px;
+  margin-right: 5px;
+  color: #999;
+  font-size: 14px;
+  text-align: end;
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    margin-top: 0;
+  }
 `;

@@ -110,3 +110,15 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
 `;
+
+export const PhotoCreditHero = styled.p`
+  bottom: 0.5vh;
+  position: absolute;
+  z-index: 3;
+  color: #ddd;
+  font-size: 14px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+`;
