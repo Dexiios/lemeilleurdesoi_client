@@ -130,7 +130,7 @@ const Navbar = ({ toggle }) => {
         </Nav>
       </>
     );
-  } else if (window.location.pathname === "/terms") {
+  } else if (window.location.pathname === "/terms" || window.location.pathname === "/404") {
     return (
       <>
         <Nav

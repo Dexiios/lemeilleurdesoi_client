@@ -12,7 +12,7 @@ import {
 } from "./SidebarElements";
 
 function Sidebar({ isOpen, toggle }) {
-  if (window.location.pathname === "/contact" || (window.location.pathname === "/terms")) {
+  if (window.location.pathname === "/contact" || (window.location.pathname === "/terms" || (window.location.pathname === "/404"))) {
     return (
       <SidebarContainer isOpen={isOpen} onClick={toggle}>
         <Icon onClick={toggle}>
@@ -23,10 +23,10 @@ function Sidebar({ isOpen, toggle }) {
             <SidebarRouteLink to="" onClick={toggle}>
               Accueil
             </SidebarRouteLink>
-            <SidebarRouteLink to="" onClick={toggle}>
+            <SidebarRouteLink to="/#services" onClick={toggle}>
               Séances
             </SidebarRouteLink>
-            <SidebarRouteLink to="" onClick={toggle}>
+            <SidebarRouteLink to="/#A propos" onClick={toggle}>
               A propos
             </SidebarRouteLink>
             <SidebarRouteLink
