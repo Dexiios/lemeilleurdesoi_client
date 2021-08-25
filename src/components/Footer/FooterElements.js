@@ -4,6 +4,8 @@ import { Link as LinkR } from "react-router-dom";
 export const FooterContainer = styled.footer`
   background-color: #F9FAFB;
   box-shadow: 0 0 7px rgba(0,0,0,.1);
+  width: 100%;
+
 `;
 
 export const FooterWrap = styled.div`

@@ -136,10 +136,16 @@ export const PhotoCredit = styled.p`
   top: 95%;
   left: 5%;
   color: #999;
-  font-size: 10px;
+  font-size: 12px;
   position: absolute;
 
   @media screen and (max-width: 480px) {
-    font-size: 10px;
+    font-size: 9px;
+    top: 92%;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 8px;
+    top: 90%;
   }
 `;
