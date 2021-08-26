@@ -24,7 +24,7 @@ const Navbar = ({ toggle }) => {
         setScollNav(false);
       }
     } else {
-      if (window.scrollY >= 200) {
+      if (window.scrollY >= 100) {
         setScollNav(true);
       } else {
         setScollNav(false);
