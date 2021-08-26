@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { ButtonLink } from "../ButtonElements";
+import { ButtonLink, ButtonFirstService, ButtonSecondService, ButtonThirdService } from "../ButtonElements";
 import { BtnWrapService } from "./ServicesElements";
 import {
   ServicesContainer,
@@ -24,20 +24,21 @@ import "aos/dist/aos.css";
 
 const Services = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000, once: true });
+    Aos.init({ duration: 1000, once: true });
   }, []);
   return (
     <ServicesContainer id="services">
       <ServicesH1>Les Séances</ServicesH1>
       <ServicesH2>
-        Je propose pour l'instant 3 types séances, d'autres seront disponibles à l'avenir.
+        Je propose pour l'instant 3 types de séances, d'autres seront disponibles à
+        l'avenir.
       </ServicesH2>
       <ServicesWrapper>
         <Flippy
           data-aos="fade"
           data-aos-delay="200"
           className="flippy_custom"
-          flipOnHover={true} // default false
+          flipOnHover={false} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
         >
@@ -50,9 +51,20 @@ const Services = () => {
           >
             <ImageBgService src={serviceFirstImage} />
             <ServiceFrontContent>
-              <ServiceFrontContentText>
+              <ServiceFrontContentText style={{fontSize: "30px"}}>
                 La consultation individuelle
               </ServiceFrontContentText>
+              <ButtonFirstService
+                to="/consultationindividuelle"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                className="first_service"
+              >
+                En savoir plus
+              </ButtonFirstService>
             </ServiceFrontContent>
           </FrontSide>
           <BackSide
@@ -90,7 +102,7 @@ const Services = () => {
         <Flippy
           data-aos="fade"
           data-aos-delay="500"
-          flipOnHover={true} // default false
+          flipOnHover={false} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
           className="flippy_custom"
@@ -107,6 +119,17 @@ const Services = () => {
               <ServiceFrontContentText>
                 La séance de groupe
               </ServiceFrontContentText>
+              <ButtonSecondService
+                to="/seancedegroupe"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                style={{ textDecoration: "none", width: "50%", margin: "auto" }}
+              >
+                En savoir plus
+              </ButtonSecondService>
             </ServiceFrontContent>
           </FrontSide>
           <BackSide
@@ -141,7 +164,7 @@ const Services = () => {
         <Flippy
           data-aos="fade"
           data-aos-delay="1000"
-          flipOnHover={true} // default false
+          flipOnHover={false} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
           className="flippy_custom"
@@ -156,6 +179,17 @@ const Services = () => {
             <ImageBgService src={serviceThirdImage} />
             <ServiceFrontContent>
               <ServiceFrontContentText>Le amma assis</ServiceFrontContentText>
+              <ButtonThirdService
+                to="/ammaassis"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                style={{ textDecoration: "none", width: "50%", margin: "auto" }}
+              >
+                En savoir plus
+              </ButtonThirdService>
             </ServiceFrontContent>
           </FrontSide>
           <BackSide

@@ -8,9 +8,9 @@ export const homeObjOne = {
   topLine: "",
   headline: "Qu'est ce que Le Meilleur de Soi ?",
   description:
-    "Le meilleur de soi est une page Facebook créée en 2019 pendant ma première formation en sophrologie-relaxation-psychologie. Je poste des photos, des messages, des conseils sur le bien-être, la vision des choses, le ressenti des émotions.",
+    "Pendant ma formation de praticien sophro-relaxologue, j’ai créé une page sur Facebook postant de temps en temps des mots sur les maux de l’esprit. Des photos, des phrases permettent souvent au lecteur de le toucher ou de le faire réfléchir sur son vécu. Au fil du temps, cette page est devenue une auto-entreprise à laquelle je consacrerai de plus en plus de temps.",
   description2:
-    "Étant lassée de plus en plus par mon métier d’infirmière, j’ai décidé de m’orienter vers quelque chose qui me correspond plus à la personne que je suis actuellement. Le Meilleur de Soi est une entreprise où je mets mon savoir-faire et expérience au service des autres personnes qui ont envie de modifier ou supprimer des situations, ressentis ou autre événements gênant leur bien-être.",
+    " Être praticien sophro-relaxologue permet d’aider les personnes en recherche de bien-être grâce à différentes techniques adaptées à leurs besoins. Mettant sophrologie, techniques respiratoires et de relaxation, méditation, la relaxation est une pratique assez polyvalente. Elle accompagne, guide la personne dans sa connaissance d’elle-même afin de l’aider à gérer stress, tensions, angoisses.",
   buttonLabel: "La sophrologie c'est quoi ?",
   imgStart: false,
   img: require("../../images/girl_against_tree.jpg").default,
@@ -31,8 +31,9 @@ export const homeObjTwo = {
   topLine: "",
   headline: "La sophrologie c'est quoi ?",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam est, vulputate vitae viverra id, egestas vel nunc. Morbi euismod metus non erat convallis maximus. Vivamus leo elit, rutrum vitae mattis at, sagittis viverra felis. Sed et malesuada est. Curabitur iaculis nibh a diam porta scelerisque. Aliquam venenatis, nisi vel cursus vestibulum, magna ex placerat dolor, eget dapibus leo ante tincidunt turpis. Mauris ultrices massa turpis, aliquam viverra ligula imperdiet nec. Sed in libero sit amet lectus tempus ullamcorper eget ut sapien. Vivamus et nibh elementum, congue ante ut, rutrum leo.",
-  description2: "",
+    "La sophro-relaxologie est l’ensemble de techniques permettant de retrouver l’équilibre entre le corps et l’esprit. Elle regroupe des techniques de respiration, de relaxation, d’activation corps-esprit permettant une modification positive de notre mieux-être.",
+  description2:
+    "Le stresse telle l’indique sa racine latine signifie « presser », « serrer », « rendre raide ». Il est utile pour nous mais quand il est répétitif sur une longue durée, il entraine l’épuisement du corps et psycho émotionnel. La gestion du stress permet de transformer ses pensées face à une situation, contrôler ses réactions physiques et émotionnelles. Soigner l’esprit permet de soigner le corps. Soigner le corps soigne l’esprit. Tout est harmonie et équilibre.",
   buttonLabel: "Voir les séances",
   imgStart: true,
   img: require("../../images/what_is_sophro.jpg").default,
@@ -54,10 +55,11 @@ export const homeObjThree = {
   headline: "Qui suis-je ?",
   description:
     "Je suis Sophie, infirmière depuis 30 ans. J’ai vécu il y a quelques années un burn-out et grâce à un accompagnement de qualité et des séances de sophrologie bihebdomadaires, je suis sortie de cette épreuve encore plus forte et plus apte à gérer les situations difficiles.",
-  description2: " En 2019, je suis décidée à suivre la formation de praticien en sophro-relaxation en parallèle avec mon métier de nuit. J’ai adoré cette formation suivie à l’école Shen-Ti de l’Union. Puit de savoir et de techniques, de belles rencontres et la certitude d’aider les autres à atteindre le bien-être tel que je le perçois. Depuis, je me suis aussi formée au massage bien-être, le Amma assis, et je ne compte pas m’arrêter là. Au plaisir de vous rencontrer !",
+  description2:
+    " En 2019, je suis décidée à suivre la formation de praticien en sophro-relaxation en parallèle avec mon métier de nuit. J’ai adoré cette formation suivie à l’école Shen-Ti de l’Union. Puit de savoir et de techniques, de belles rencontres et la certitude d’aider les autres à atteindre le bien-être tel que je le perçois. Depuis, je me suis aussi formée au massage bien-être, le Amma assis, et je ne compte pas m’arrêter là. Au plaisir de vous rencontrer !",
   buttonLabel: "Me contacter",
   imgStart: true,
-  img: require("../../images/portrait.jpg").default,
+  img: require("../../images/sophie.jpg").default,
   alt: "portrait",
   dark: false,
   primary: false,

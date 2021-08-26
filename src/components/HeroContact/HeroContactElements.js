@@ -76,7 +76,7 @@ export const HeroH1 = styled.h1`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 42px;
+    font-size: 32px;
   }
 `;
 

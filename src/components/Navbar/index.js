@@ -40,7 +40,12 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop();
   };
 
-  if (window.location.pathname === "/contact") {
+  if (
+    window.location.pathname === "/contact" ||
+    window.location.pathname === "/consultationindividuelle" ||
+    window.location.pathname === "/seancedegroupe" ||
+    window.location.pathname === "/ammaassis"
+  ) {
     return (
       <>
         <Nav scrollNav={scrollNav}>
@@ -130,7 +135,10 @@ const Navbar = ({ toggle }) => {
         </Nav>
       </>
     );
-  } else if (window.location.pathname === "/terms" || window.location.pathname === "/404") {
+  } else if (
+    window.location.pathname === "/terms" ||
+    window.location.pathname === "/404"
+  ) {
     return (
       <>
         <Nav

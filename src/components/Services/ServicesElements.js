@@ -110,7 +110,7 @@ export const ServiceFrontContent = styled.div`
   position: absolute;
   top: 250px;
   width: 100%;
-  display: flex;
+  flex-basis: 100%;
 
   @media screen and (max-width: 480px) {
     top: 200px;
@@ -131,6 +131,7 @@ export const ServiceFrontContentText = styled.p`
   text-align: center;
   width: 100%;
   text-shadow: #000 1px 0 10px;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 280px) {
     font-size: 28px;

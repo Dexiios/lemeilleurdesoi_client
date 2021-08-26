@@ -15,10 +15,10 @@
 }
 
 @media screen and (max-width: 280px) {
-    .flippy_custom {
-      width: 240px;
-      height: 600px;
-      filter: drop-shadow(6px 3px 6px #666);
-      max-height: 600px;
-    }
+  .flippy_custom {
+    width: 240px;
+    height: 600px;
+    filter: drop-shadow(6px 3px 6px #666);
+    max-height: 600px;
   }
+}
