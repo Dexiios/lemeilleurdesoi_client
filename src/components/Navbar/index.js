@@ -32,6 +32,8 @@ const Navbar = ({ toggle }) => {
     }
   };
 
+  let contactButton;
+
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
   }, []);
@@ -46,6 +48,38 @@ const Navbar = ({ toggle }) => {
     window.location.pathname === "/seancedegroupe" ||
     window.location.pathname === "/ammaassis"
   ) {
+    if (window.location.pathname === "/contact") {
+      contactButton = (
+        <NavBtnLink
+          to="/contact"
+          scrollNav={scrollNav}
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-80}
+          style={{ borderBottom: "3px solid #dbc2ad" }}
+        >
+          Contact
+        </NavBtnLink>
+      );
+    } else {
+      contactButton = (
+        <NavBtnLink
+          to="/contact"
+          scrollNav={scrollNav}
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-80}
+          style={{ borderBottom: "transparent" }}
+        >
+          Contact
+        </NavBtnLink>
+      );
+    }
+
     return (
       <>
         <Nav scrollNav={scrollNav}>
@@ -117,20 +151,7 @@ const Navbar = ({ toggle }) => {
                 </NavBtnLink>
               </NavItem>
             </NavMenu>
-            <NavBtn>
-              <NavBtnLink
-                to="/contact"
-                scrollNav={scrollNav}
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                style={{ borderBottom: "3px solid #dbc2ad" }}
-              >
-                Contact
-              </NavBtnLink>
-            </NavBtn>
+            <NavBtn>{contactButton}</NavBtn>
           </NavbarContainer>
         </Nav>
       </>

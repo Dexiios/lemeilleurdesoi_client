@@ -59,7 +59,7 @@ const HeroOthers = () => {
           />
         </HeroBg>
         <HeroContent>
-          <HeroH1>La séance de groupe</HeroH1>
+          <HeroH1>L'atelier en groupe</HeroH1>
         </HeroContent>
         <PhotoCreditHeroContact style={{color: "#bbb"}}>
           Photo par Papaioannou Kostas sur Unsplash

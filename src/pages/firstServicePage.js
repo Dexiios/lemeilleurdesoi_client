@@ -4,8 +4,8 @@ import Sidebar from "../components/Sidebar";
 import HeroContactSection from "../components/HeroContact";
 import Footer from "../components/Footer";
 import InfoSection from "../components/InfoSection/Index";
-import ContactSection from "../components/ContactSection";
 import { contactObjOne } from "../components/InfoSection/Data";
+import FirstService from "../components/FirstService";
 
 const FirstServicePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +19,7 @@ const FirstServicePage = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroContactSection />
-      <ContactSection />
-      <InfoSection {...contactObjOne} />
+      <FirstService />
       <Footer />
     </>
   );

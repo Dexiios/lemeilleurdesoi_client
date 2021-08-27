@@ -82,7 +82,7 @@ export const contactObjOne = {
   buttonLabel: "Me contacter",
   imgStart: false,
   img: require("../../images/portrait.jpg").default,
-  alt: "Mindfullness",
+  alt: "oumetrouver",
   dark: false,
   primary: false,
   darkText: true,

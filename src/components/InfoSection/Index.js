@@ -39,7 +39,7 @@ const InfoSection = ({
   photoAuthor,
 }) => {
   useEffect(() => {
-    Aos.init({ duration: 3000, once: true });
+    Aos.init({ duration: 1500, once: true });
   }, []);
   if (window.location.pathname === "/contact") {
     return (
@@ -93,7 +93,10 @@ const InfoSection = ({
                     }}
                     loading="lazy"
                     allowfullscreen
-                    src={"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJnzBL10SkrhIR_vEo7zWs1go&key=" + process.env.REACT_APP_GOOGLE_API_KEY}
+                    src={
+                      "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJnzBL10SkrhIR_vEo7zWs1go&key=" +
+                      process.env.REACT_APP_GOOGLE_API_KEY
+                    }
                   ></iframe>
                 </ImgWrap>
               </Column2>
@@ -150,7 +153,7 @@ const InfoSection = ({
               <Column2>
                 <ImgWrap data-aos="fade-up">
                   <Img src={img} alt={alt} />
-                <PhotoCredit>{photoAuthor}</PhotoCredit>
+                  <PhotoCredit>{photoAuthor}</PhotoCredit>
                 </ImgWrap>
               </Column2>
             </InfoRow>

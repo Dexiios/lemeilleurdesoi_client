@@ -3,9 +3,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import HeroContactSection from "../components/HeroContact";
 import Footer from "../components/Footer";
-import InfoSection from "../components/InfoSection/Index";
-import ContactSection from "../components/ContactSection";
-import { contactObjOne } from "../components/InfoSection/Data";
+import SecondService from "../components/SecondService";
 
 const SecondServicePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +17,7 @@ const SecondServicePage = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroContactSection />
-      <ContactSection />
-      <InfoSection {...contactObjOne} />
+      <SecondService/>
       <Footer />
     </>
   );

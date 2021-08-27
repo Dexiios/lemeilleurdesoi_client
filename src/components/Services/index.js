@@ -86,7 +86,7 @@ const Services = () => {
             <ImageBgService src={serviceSecondImage} />
             <ServiceFrontContent>
               <ServiceFrontContentText>
-                La séance de groupe
+                L'atelier en groupe
               </ServiceFrontContentText>
               <ButtonSecondService
                 to="/seancedegroupe"
