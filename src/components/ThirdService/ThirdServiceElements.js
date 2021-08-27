@@ -28,7 +28,6 @@ export const InfoWrapper = styled.div`
 export const InfoRow = styled.div`
   display: grid;
   margin: 150px 0 150px 0;
-  grid-auto-columns: minmax(1fr, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
@@ -41,7 +40,7 @@ export const InfoRow = styled.div`
 `;
 export const InfoRow2 = styled.div`
   display: grid;
-  margin: 50px 0 50px 0;
+  margin: 150px 0 150px 0;
   grid-auto-columns: minmax(auto, 1fr);
   justify-items: center;
   grid-template-areas: ${({ imgStart }) =>
@@ -49,7 +48,7 @@ export const InfoRow2 = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2' 'col3 col3'`};
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
     margin: 20px 0 20px 0;
   }
 `;
@@ -100,14 +99,14 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 28px;
+  font-size: 48px;
   line-height: 1.1;
   line-weight: 600;
   text-align: center;
   color: ${({ lightText }) => (lightText ? "#f7f8f2" : "#222")};
 
   @media screen and (max-width: 480px) {
-    font-size: 28px;
+    font-size: 32px;
   }
 `;
 

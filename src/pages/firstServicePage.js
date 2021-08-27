@@ -3,8 +3,6 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import HeroContactSection from "../components/HeroContact";
 import Footer from "../components/Footer";
-import InfoSection from "../components/InfoSection/Index";
-import { contactObjOne } from "../components/InfoSection/Data";
 import FirstService from "../components/FirstService";
 
 const FirstServicePage = () => {

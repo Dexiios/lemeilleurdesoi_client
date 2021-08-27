@@ -77,7 +77,7 @@ export const contactObjOne = {
   topLine: "",
   headline: "Où me trouver ?",
   description:
-    "Les consultations se font à l'adresse suivante (hors séance de groupe extérieur)",
+    "Les consultations se font à l'adresse suivante (hors atelier de groupe extérieur)",
   description2: "33 chemin de Lespinasse 31140 Aucamville",
   buttonLabel: "Me contacter",
   imgStart: false,
