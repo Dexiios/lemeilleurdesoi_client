@@ -13,7 +13,16 @@ import {
   BtnWrap,
   TopLine,
   Heading,
+  TarifSectionContainer,
+  TarifWrapBorder,
+  TarifInfoWrap,
+  TarifImage,
+  TarifText,
+  TarifBorderBlock,
 } from "../FirstService/FirstServiceElements";
+
+import TimeImage from "../../images/hourglass.png";
+import EuroImage from "../../images/euro.png";
 
 const FirstService = () => {
   return (
@@ -25,7 +34,6 @@ const FirstService = () => {
               <TextWrapper style={{ maxWidth: "70vw" }}>
                 <TopLine>La consultation individuelle</TopLine>
                 <Subtitle>
-                  {" "}
                   La première séance est la plus importante. Elle me permet de
                   faire connaissance, de récolter toutes informations, habitude
                   de vie, situations familiale et professionnelle afin de cibler
@@ -39,44 +47,18 @@ const FirstService = () => {
                 <Subtitle>
                   Afin de résoudre ces problèmes, nous pratiquerons différentes
                   activités et méthodes en fonction de ce qui vous correspond le
-                  mieux.
+                  mieux:
                 </Subtitle>
-              </TextWrapper>
-            </Column1>
-          </InfoRow>
-        </InfoWrapper>
-      </InfoContainer>
-      <InfoContainer>
-        <InfoWrapper>
-          <InfoRow2>
-            <Column1>
-              <Heading>Séances de sophrologie</Heading>
-            </Column1>
-            <Column2>
-              <Heading>Streching (étirement musculaire)</Heading>
-            </Column2>
-            <Column3>
-              <Heading>Automassage</Heading>
-            </Column3>
-          </InfoRow2>
-          <InfoRow2>
-            <Column1>
-              <Heading>Méditation</Heading>
-            </Column1>
-            <Column2>
-              <Heading>Visualisation</Heading>
-            </Column2>
-            <Column3>
-              <Heading>Relaxation</Heading>
-            </Column3>
-          </InfoRow2>
-        </InfoWrapper>
-      </InfoContainer>
-      <InfoContainer>
-        <InfoWrapper>
-          <InfoRow style={{ margin: "50px 0 50px 0" }}>
-            <Column1>
-              <TextWrapper style={{ maxWidth: "70vw" }}>
+                <Subtitle style={{textAlign: "start"}}>
+                  - Séance de sophrologie
+                  <br />
+                  <br/>
+                  - Stretching (étirement musculaire)
+                  <br /><br/>
+                  - Automassage <br /><br/>
+                  - Méditation <br /><br/>
+                  - Visualisation ... <br />
+                </Subtitle>
                 <Subtitle>
                   Un suivi régulier, répétitif permet à l’esprit de rester
                   stable. C’est un apprentissage de longue haleine pour
@@ -93,34 +75,24 @@ const FirstService = () => {
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
-      <InfoContainer>
-        <InfoWrapper>
-          <InfoRow
-            style={{
-              margin: "0 0 0 0",
-              gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-            }}
-          >
-            <Column1>
-              <TextWrapper style={{ maxWidth: "70vw" }}>
-                <Heading style={{ fontSize: "2rem" }}>
-                  1ère séance : 1h30/2h
-                </Heading>
-                <Heading style={{ fontSize: "2rem" }}>
-                  Durée des autres séances : 1h
-                </Heading>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <TextWrapper style={{ maxWidth: "70vw" }}>
-                <Heading style={{ fontSize: "2rem" }}>
-                  Tarif: 60.00€ TTC/séance
-                </Heading>
-              </TextWrapper>
-            </Column2>
-          </InfoRow>
-        </InfoWrapper>
-      </InfoContainer>
+      <TarifSectionContainer>
+        <TarifWrapBorder>
+          <TarifInfoWrap>
+            <TarifBorderBlock>
+              <TarifImage src={TimeImage} />
+              <TarifText>1ère séance: 1h30/2H</TarifText>
+              <TarifText>Les autres séances: 1h</TarifText>
+            </TarifBorderBlock>
+          </TarifInfoWrap>
+          <TarifInfoWrap>
+            <TarifBorderBlock>
+              <TarifImage src={EuroImage} />
+              <TarifText>60.00€ TTC</TarifText>
+              <TarifText>Par séance</TarifText>
+            </TarifBorderBlock>
+          </TarifInfoWrap>
+        </TarifWrapBorder>
+      </TarifSectionContainer>
       <InfoContainer>
         <InfoWrapper>
           <InfoRow style={{ margin: "0 0 50px 0" }}>

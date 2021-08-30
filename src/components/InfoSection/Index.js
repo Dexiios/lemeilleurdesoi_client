@@ -73,6 +73,7 @@ const InfoSection = ({
                   <Subtitle
                     style={{
                       textAlign: "center",
+                      fontWeight: "700",
                     }}
                     darkText={darkText}
                   >

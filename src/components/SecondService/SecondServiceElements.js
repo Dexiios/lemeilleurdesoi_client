@@ -74,7 +74,6 @@ export const Column3 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
   margin: 0 50px;
   overflow: hidden;
 
@@ -111,7 +110,6 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
   text-align: justify;

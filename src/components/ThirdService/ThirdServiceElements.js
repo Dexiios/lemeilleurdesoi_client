@@ -27,7 +27,7 @@ export const InfoWrapper = styled.div`
 
 export const InfoRow = styled.div`
   display: grid;
-  margin: 150px 0 150px 0;
+  margin: 70px 0 150px 0;
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
@@ -74,7 +74,6 @@ export const Column3 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
   margin: 0 50px;
   overflow: hidden;
 
@@ -111,7 +110,6 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
   text-align: justify;

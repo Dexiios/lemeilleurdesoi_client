@@ -13,12 +13,24 @@ import {
   Heading,
 } from "../SecondService/SecondServiceElements";
 
+import {
+  TarifSectionContainer,
+  TarifWrapBorder,
+  TarifInfoWrap,
+  TarifImage,
+  TarifText,
+  TarifBorderBlock,
+} from "../FirstService/FirstServiceElements";
+
+import TimeImage from "../../images/hourglass.png";
+import EuroImage from "../../images/euro.png";
+
 const SecondService = () => {
   return (
     <>
       <InfoContainer>
         <InfoWrapper>
-          <InfoRow style={{ margin: "150px 0 0 0" }}>
+          <InfoRow style={{ margin: "70px 0 0 0" }}>
             <Column1>
               <TextWrapper style={{ maxWidth: "70vw" }}>
                 <TopLine>Atelier de groupe (5 à 10 personnes)</TopLine>
@@ -36,29 +48,24 @@ const SecondService = () => {
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
-      <InfoContainer>
-        <InfoWrapper>
-          <InfoRow
-            style={{
-              margin: "0 0 0 0",
-              gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-            }}
-          >
-            <Column1>
-              <TextWrapper style={{ maxWidth: "70vw" }}>
-                <Heading style={{ fontSize: "2rem" }}>Durée: 1h/1h30</Heading>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <TextWrapper style={{ maxWidth: "70vw" }}>
-                <Heading style={{ fontSize: "2rem" }}>
-                  Tarif: 20.00€ TTC/personnes
-                </Heading>
-              </TextWrapper>
-            </Column2>
-          </InfoRow>
-        </InfoWrapper>
-      </InfoContainer>
+      <TarifSectionContainer>
+        <TarifWrapBorder>
+          <TarifInfoWrap>
+            <TarifBorderBlock>
+              <TarifImage src={TimeImage} />
+              <TarifText>1h à 1h30</TarifText>
+              <TarifText>Par séance</TarifText>
+            </TarifBorderBlock>
+          </TarifInfoWrap>
+          <TarifInfoWrap>
+            <TarifBorderBlock>
+              <TarifImage src={EuroImage} />
+              <TarifText>20.00€ TTC</TarifText>
+              <TarifText>Par séance et par personne</TarifText>
+            </TarifBorderBlock>
+          </TarifInfoWrap>
+        </TarifWrapBorder>
+      </TarifSectionContainer>
       <InfoContainer>
         <InfoWrapper>
           <InfoRow style={{ margin: "0 0 50px 0" }}>

@@ -27,7 +27,7 @@ export const InfoWrapper = styled.div`
 
 export const InfoRow = styled.div`
   display: grid;
-  margin: 150px 0 150px 0;
+  margin: 70px 0 0 0;
   grid-auto-columns: minmax(1fr, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
@@ -55,7 +55,6 @@ export const InfoRow2 = styled.div`
 `;
 
 export const Column1 = styled.div`
-  margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
 `;
@@ -75,7 +74,6 @@ export const Column3 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
   margin: 0 50px;
   overflow: hidden;
 
@@ -112,7 +110,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  margin-bottom: 35px;
+  margin-top: 35px;
   font-size: 18px;
   line-height: 24px;
   text-align: justify;
@@ -169,4 +167,83 @@ export const PhotoCredit = styled.p`
     font-size: 8px;
     top: 90%;
   }
+`;
+
+export const TarifSectionContainer = styled.div`
+  color: #fff;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 768px) {
+    margin: 20px 0 20px 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 280px) {
+    margin-top: 30px;
+  }
+`;
+
+export const TarifWrapBorder = styled.div`
+  background-color: #fff;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: grid;
+  grid-gap: 75px;
+  justify-items: center;
+  padding: 50px;
+
+  @media screen and (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+
+export const TarifBorderBlock = styled.div`
+  background-color: #fff;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(2px 1px 7px #ddd);
+`;
+
+export const TarifInfoWrap = styled.div`
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+`;
+
+export const TarifImage = styled.img`
+  padding: 1rem;
+  height: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+export const TarifText = styled.p`
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  text-align: center;
+
+  @media screen and (max-width: 280px) {
+    font-size: 15px;
+  }
+`;
+
+export const TarifTextH1 = styled.h2`
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
 `;
