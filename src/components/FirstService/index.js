@@ -7,12 +7,8 @@ import {
   InfoWrapper,
   Subtitle,
   TextWrapper,
-  InfoRow2,
-  Column2,
-  Column3,
   BtnWrap,
   TopLine,
-  Heading,
   TarifSectionContainer,
   TarifWrapBorder,
   TarifInfoWrap,
@@ -35,10 +31,10 @@ const FirstService = () => {
                 <TopLine>La consultation individuelle</TopLine>
                 <Subtitle>
                   La première séance est la plus importante. Elle me permet de
-                  faire connaissance, de récolter toutes informations, habitude
+                  faire connaissance, de récolter toute information, habitude
                   de vie, situations familiale et professionnelle afin de cibler
                   le problème et de proposer les méthodes les mieux adaptées
-                  afin de le résoudre. Préparation à un évènement (examens,
+                  afin de le résoudre. Préparation à un événement (examens,
                   accouchement, deuil...), changement de comportement face à une
                   addiction, une phobie, modifier son ressenti face à une
                   situation anxiogène, accepter les souffrances liées au passé,
@@ -47,7 +43,7 @@ const FirstService = () => {
                 <Subtitle>
                   Afin de résoudre ces problèmes, nous pratiquerons différentes
                   activités et méthodes en fonction de ce qui vous correspond le
-                  mieux:
+                  mieux :
                 </Subtitle>
                 <Subtitle style={{textAlign: "start"}}>
                   - Séance de sophrologie

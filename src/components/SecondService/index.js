@@ -7,10 +7,8 @@ import {
   InfoWrapper,
   Subtitle,
   TextWrapper,
-  Column2,
   TopLine,
   BtnWrap,
-  Heading,
 } from "../SecondService/SecondServiceElements";
 
 import {

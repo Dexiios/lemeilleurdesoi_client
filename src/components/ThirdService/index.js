@@ -7,10 +7,8 @@ import {
   InfoWrapper,
   Subtitle,
   TextWrapper,
-  Column2,
   TopLine,
   BtnWrap,
-  Heading,
 } from "../ThirdService/ThirdServiceElements";
 
 import {
@@ -37,7 +35,7 @@ const ThirdService = () => {
                 <Subtitle>
                   Je pratique aussi le Amma assis. C’est un massage assis de 15
                   à 20min sur chaise ergonomique sur une personne habillée.
-                  C’est un enchainement précis d’étirement, pressions et
+                  C’est un enchaînement précis d’étirement, pressions et
                   percussions. De courte durée, il se fait partout, il est
                   stimulant et permet un état profond de relaxation et de
                   bien-être.
