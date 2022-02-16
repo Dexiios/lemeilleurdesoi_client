@@ -33,7 +33,7 @@ const FourthService = () => {
               <TextWrapper style={{ maxWidth: "70vw" }}>
                 <TopLine>L'Abyanga (modelage ayurvédique)</TopLine>
                 <Subtitle>
-                  L'Abyanga est un massage aux huiles provenant de l'Inde et alternant pressions, MOT INCONNU et étirements de tout le corps. C'est un massage bien-être dynamique et enveloppant qui detoxifie et tonifie l'organisme.
+                  L'Abyanga est un massage aux huiles provenant de l'Inde et alternant pressions, frictions et étirements de tout le corps. C'est un massage bien-être dynamique et enveloppant qui detoxifie et tonifie l'organisme.
                 </Subtitle>
               </TextWrapper>
             </Column1>
