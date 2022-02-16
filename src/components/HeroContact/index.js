@@ -12,6 +12,7 @@ import HeroContactImage from "../../images/hero_contact_image.jpg";
 import HeroConsultationIndividuelle from "../../images/girl_meditating_desert.jpg";
 import HeroSeanceDeGroupe from "../../images/group.jpg";
 import HeroAmmaAssis from "../../images/amma.jpg";
+import HeroAbyanga from "../../images/abyanga.jpg";
 
 const HeroOthers = () => {
   if (window.location.pathname === "/consultationindividuelle") {
@@ -59,7 +60,7 @@ const HeroOthers = () => {
           />
         </HeroBg>
         <HeroContent>
-          <HeroH1>L'atelier en groupe</HeroH1>
+          <HeroH1>L'atelier de groupe</HeroH1>
         </HeroContent>
         <PhotoCreditHeroContact style={{color: "#bbb"}}>
           Photo par Papaioannou Kostas sur Unsplash
@@ -88,11 +89,38 @@ const HeroOthers = () => {
           <HeroH1>Le Amma assis</HeroH1>
         </HeroContent>
         <PhotoCreditHeroContact style={{color: "#ddd"}}>
+        </PhotoCreditHeroContact>
+      </HeroContainer>
+    );
+  } 
+  else if (window.location.pathname === "/abyanga") {
+    return (
+      <HeroContainer
+        id="accueil"
+        style={{
+          height: "50vh",
+        }}
+      >
+        <HeroBg>
+          <ImageBg
+            src={HeroAbyanga}
+            style={{
+              filter: "blur(8px)",
+              WebkitFilter: "blur(5px)",
+              transform: "scale(1.1)",
+            }}
+          />
+        </HeroBg>
+        <HeroContent>
+          <HeroH1>L'Abyanga</HeroH1>
+        </HeroContent>
+        <PhotoCreditHeroContact style={{color: "#ddd"}}>
           Photo par Toa Heftiba sur Unsplash
         </PhotoCreditHeroContact>
       </HeroContainer>
     );
-  } else {
+  } 
+  else {
     return (
       <HeroContainer id="accueil">
         <HeroBg>

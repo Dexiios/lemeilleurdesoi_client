@@ -28,7 +28,7 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>A propos</FooterLinkTitle>
+              <FooterLinkTitle>À propos</FooterLinkTitle>
               <FooterLink to="/contact">Contact</FooterLink>
               <FooterLink to="/terms">Mentions Légales</FooterLink>
             </FooterLinkItems>

@@ -117,6 +117,30 @@ export const ButtonSecondService = styled(LinkR)`
 
 export const ButtonThirdService = styled(LinkR)`
   border-radius: 50px;
+  background-color: rgb(97,111,156,0.7);
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
+  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  outline: none;
+  width: 50%;
+  margin: auto;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: rgb(97,111,156,0.9);
+  }
+`;
+
+export const ButtonFourthService = styled(LinkR)`
+  border-radius: 50px;
   background-color: rgb(77,99,109,0.7);
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};

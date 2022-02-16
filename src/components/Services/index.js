@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import { ButtonLink, ButtonFirstService, ButtonSecondService, ButtonThirdService } from "../ButtonElements";
+import { ButtonLink, ButtonFirstService, ButtonSecondService, ButtonThirdService, ButtonFourthService } from "../ButtonElements";
 import { BtnWrapService } from "./ServicesElements";
 import {
   ServicesContainer,
   ServicesH1,
   ServicesWrapper,
-  ServicesH2,
   ImageBgService,
   ServiceFrontContent,
   ServiceFrontContentText,
@@ -14,6 +13,7 @@ import {
 import serviceFirstImage from "../../images/girl_meditating_desert.jpg";
 import serviceSecondImage from "../../images/group.jpg";
 import serviceThirdImage from "../../images/amma.jpg";
+import serviceFourthImage from "../../images/abyanga.jpg";
 import Flippy, { FrontSide } from "react-flippy";
 import "./Services.css";
 import Aos from "aos";
@@ -26,10 +26,6 @@ const Services = () => {
   return (
     <ServicesContainer id="services">
       <ServicesH1>Les Séances</ServicesH1>
-      <ServicesH2>
-        Je propose pour l'instant 3 types de séances, d'autres seront disponibles à
-        l'avenir.
-      </ServicesH2>
       <ServicesWrapper>
         <Flippy
           data-aos="fade"
@@ -86,7 +82,7 @@ const Services = () => {
             <ImageBgService src={serviceSecondImage} />
             <ServiceFrontContent>
               <ServiceFrontContentText>
-                L'atelier en groupe
+                L'atelier de groupe
               </ServiceFrontContentText>
               <ButtonSecondService
                 to="/seancedegroupe"
@@ -134,6 +130,40 @@ const Services = () => {
               >
                 En savoir plus
               </ButtonThirdService>
+            </ServiceFrontContent>
+          </FrontSide>
+          <PhotoCreditService>
+          </PhotoCreditService>
+        </Flippy>
+        <Flippy
+          data-aos="fade"
+          data-aos-delay="1000"
+          flipOnHover={false} // default false
+          flipOnClick={false} // default false
+          flipDirection="horizontal" // horizontal or vertical
+          className="flippy_custom"
+        >
+          <FrontSide
+            style={{
+              backgroundColor: "#fff",
+              padding: "0px",
+              borderRadius: "15px",
+            }}
+          >
+            <ImageBgService src={serviceFourthImage} />
+            <ServiceFrontContent>
+              <ServiceFrontContentText>L'Abyanga</ServiceFrontContentText>
+              <ButtonFourthService
+                to="/abyanga"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                style={{ textDecoration: "none", width: "50%", margin: "auto" }}
+              >
+                En savoir plus
+              </ButtonFourthService>
             </ServiceFrontContent>
           </FrontSide>
           <PhotoCreditService>

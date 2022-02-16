@@ -19,9 +19,9 @@ const Terms = () => {
         chemin de Lespinasse 31140 Aucamville, France.
       </TermsText>
       <TermsText>
-        <b>Identification de l'entreprise</b> : SARL A REMPLIR !!!!!!!!!!{" "}
+        <b>Identification de l'entreprise</b> {" "}
         <b>Sophie Theze - Le Meilleur de Soi : bien-être et relaxation</b> au
-        capital social de 0€ - SIREN : - RCS ou RM : - Adresse postale : 33
+        capital social de 0€ - SIREN : 421 413 584 - Adresse postale : 33
         chemin de Lespinasse 31140 Aucamville, France.
       </TermsText>
       <TermsText>

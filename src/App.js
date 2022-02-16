@@ -9,6 +9,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import FirstServicePage from "./pages/firstServicePage";
 import SecondServicePage from "./pages/secondServicePage";
 import ThirdServicePage from "./pages/thirdServicePage";
+import FourthServicePage from "./pages/fourthServicePage";
 
 console.log(process.env.REACT_APP_GOOGLE_API_KEY)
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/consultationindividuelle" component={FirstServicePage} exact/>
           <Route path="/seancedegroupe" component={SecondServicePage} exact/>
           <Route path="/ammaassis" component={ThirdServicePage} exact/>
+          <Route path="/abyanga" component={FourthServicePage} exact/>
           <Redirect to="/404" />
         </Switch>
       </ScrollToTop>
