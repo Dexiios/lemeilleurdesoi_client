@@ -109,6 +109,14 @@ export const ImgWrap = styled.div`
   border-radius: 15px;
 `;
 
+export const ImgMaps = styled.img`
+  width: 100%;
+  height 350px;
+  border: 0;
+  border-radius: 15px;
+  filter: drop-shadow(4px 2px 8px #ccc);
+`;
+
 export const Img = styled.img`
   width: 100%;
   padding-right: 0;

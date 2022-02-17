@@ -81,7 +81,7 @@ export const contactObjOne = {
   description2: "33 chemin de Lespinasse 31140 Aucamville",
   buttonLabel: "Me contacter",
   imgStart: false,
-  img: require("../../images/portrait.jpg").default,
+  img: require("../../images/screenshot_google_map.png").default,
   alt: "oumetrouver",
   dark: false,
   primary: false,

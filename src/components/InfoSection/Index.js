@@ -83,22 +83,7 @@ const InfoSection = ({
               </Column1>
               <Column2>
                 <ImgWrap data-aos="fade-up">
-                  <iframe
-                    title="map"
-                    width="100%"
-                    height="350px"
-                    style={{
-                      border: "0",
-                      borderRadius: "15px",
-                      filter: "drop-shadow(4px 2px 8px #ccc)",
-                    }}
-                    loading="lazy"
-                    allowfullscreen
-                    src={
-                      "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJnzBL10SkrhIR_vEo7zWs1go&key=" +
-                      process.env.REACT_APP_GOOGLE_API_KEY
-                    }
-                  ></iframe>
+                  <Img src={img} alt={alt}/>
                 </ImgWrap>
               </Column2>
             </InfoRow>
